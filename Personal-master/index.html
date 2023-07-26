@@ -542,7 +542,7 @@ Olen läbinud gümnaasiumis kursuse “Psühholoogia alused” ning ka Tartu Ül
      <div class="module">
       <h2 class="module-title">Veebikujundus</h2>
       <p>Õppisin tegema nii ühe kui mitmelehelisi veebilehti HTML, CSS ja Bootsrapi kasutades. Seda toetasid disaini õpingud, kus sain teadmisi värviteoorias, teksti paigutuses, liigenduses, lehe hierarhias, kasutajamugavusest, ligipääsetavusest, steriliseerimisest, graafilisest disainist, animatsioonist, 3Dst, logodest, stiiliraamatust, veebi trendidest, visualiseerimisest, tüpograafiat, prototüüpimise valikutest(, fotograafia alus tõdesid). Õppisime kasutama Figma, Adobe Photoshop, Illustrator ja After Effects keskkonds, saime kasutada graafikalauda ning avardasime silmaringi erialases terminoloogias.</p>
-      
+
       <div class="course">
         <h3 class="course-title">HTML ja CSS</h3>
         <p class="course-description">Tutvusime HTML ja CSS koodikirjutamise põhimõtetega ning kasutasime neid erinevaid töölehti läbi tehes. Läbisime iseseivalt "Master the Basics of HTML5 & CSS3: Beginner Web Development" Udemy veebikursuse. Valmis nii ühe- kui mitmeleheline veebileht.</p>
@@ -565,15 +565,46 @@ Olen läbinud gümnaasiumis kursuse “Psühholoogia alused” ning ka Tartu Ül
       <h3 class="course-title">Disaini kavandamine ja prototüüpimine konkreetse projekti raames, UI disain</h3>
       <p class="course-description">Õppisime UI disaini ja üleülediselt graafilise disaini põhimõtteid ning reegleid, nagu näiteks värviteooria, kasutatavuse üldkriteeriumid, ligipääsetavuse stantardeid (WCAG), tüpograafia, UI elemendid ning disaini mustrid. Lugesime läbi selleks läbi ka Steve Krug "Don't Make me Think" raamatu. Disaini printsiipide praktiseerisime erinevate ülesannete läbi, nagu näiteks tänukirjade koostamisel, koolile animeeritud jõulukaartide tegemisel, graafikalauaga joonistades. Kursuse raames valmis ka esimene Figma prototüüp, kliendiprojekt ja Aasta Tegija võistluse töö. Kasutasime Figma, Adobe Illustator ja Photoshop keskkondasid.</p>
       <div class="media">
-        <img src="assets/img/veebikujundus/tanukirjad.png" alt="tänukirjad">
-        <img src="assets/img/veebikujundus/jõulukaart_it-kool.gif" alt="animeeritud jõulukaart">
-        <img src="assets/img/veebikujundus/aasta_tegija-_2023.gif" alt="Aasta Tegija 2023 prototüüp">
+        <div class="responsive">
+          <div class="gallery">
+            <a href="assets/img/veebikujundus/tanukirjad.png" onclick="openLightbox('assets/img/veebikujundus/tanukirjad.png'); return false;">
+              <img src="assets/img/veebikujundus/tanukirjad.png" alt="tänukirjad">
+            </a>
+            <div class="desc">Add a description of the image here</div>
+          </div>
+        </div>
+        <div class="responsive">
+          <div class="gallery">
+            <a href="assets/img/veebikujundus/jõulukaart_it-kool.gif" onclick="openLightbox('assets/img/veebikujundus/jõulukaart_it-kool.gif'); return false;" >
+              <img src="assets/img/veebikujundus/jõulukaart_it-kool.gif" alt="animeeritud jõulukaart">
+            </a>
+            <div class="desc">Add a description of the image here</div>
+          </div>
+        </div>
+        <div class="responsive">
+          <div class="gallery">
+            <a href="assets/img/veebikujundus/aasta_tegija-_2023.gif" onclick="openLightbox('assets/img/veebikujundus/aasta_tegija-_2023.gif'); return false;">
+              <img src="assets/img/veebikujundus/aasta_tegija-_2023.gif" alt="Aasta Tegija 2023 prototüüp">
+            </a>
+            <div class="desc">Add a description of the image here</div>
+          </div>
+        </div>
+        <div class="clearfix"></div>
+
+        <!--<embed src="files/Don't_make_my_think.docx" type="application/docx" alt="Don't make me think raamatu märkmed"/> -->
       </div>
     </div>
     
+<!-- Lightbox -->
+<div id="lightbox" class="lightbox" onclick="closeLightbox()">
+  <span class="lightbox-content">
+    <img id="lightbox-image">
+  </span>
+</div>
+
     <div class="course">
       <h3 class="course-title">Veebitehnoloogiad ja kujundusvahendid</h3>
-      <p class="course-description">Võtsime läbi järgmised teemad, mille käigus valmis esitlusi, ülevaateid ning sõnapilvesid ning kasutasime Wappalyxerit:
+      <p class="course-description">Võtsime läbi järgmised teemad, mille käigus valmis esitlusi, ülevaateid ning sõnapilvesid ning kasutasime Wappalyserit:
         <ul>
           <li>Liitreaalsus</li>
           <li>Veebikujunduse trendid</li>
@@ -583,7 +614,9 @@ Olen läbinud gümnaasiumis kursuse “Psühholoogia alused” ning ka Tartu Ül
         </ul>
       </p>
       <div class="media">
-        <img src="path/to/image1.jpg" alt="Screenshot 1">
+        <img src="assets/img/veebikujundus/ux_words_2.jpg" alt="sõnapilv 1">
+        <img src="assets/img/veebikujundus/ux_words_3.jpg" alt="sõnapilv 2">
+        <!-- <embed src="files/Veebikujunduse_trendid.pptx" type="application/pptx" alt="veebikursuse trendid esitlus"/>  --->
       </div>
     </div>
 
@@ -591,7 +624,12 @@ Olen läbinud gümnaasiumis kursuse “Psühholoogia alused” ning ka Tartu Ül
       <h3 class="course-title">Animatsioon</h3>
       <p class="course-description">Kasutasime peamiselt Adobe Affects keskkonda, kus kasutasime erinevaid tööritus, nagu näiteks pin tool. Valmisi liikuv foto Cinemagraph, 3D logo ning läbisime erinevaid After Effects keskkonnas olevaid õpetusi.</p>
       <div class="media">
-        <img src="path/to/image1.jpg" alt="Screenshot 1">
+        <img src="assets/img/veebikujundus/3D_animatsion.gif" alt="3D logo">
+        <img src="assets/img/veebikujundus/skeleton_gif.gif" alt="luukere GIF">
+        <img src="assets/img/veebikujundus/snake_gif.gif" alt="mao GIF">
+        <video width="320" height="240" controls> 
+          <source src="assets/img/veebikujundus/cinemagraph_test.mp4" type="video/mp4" alt="cinemagraph">
+        </video>
       </div>
     </div>
 
@@ -1098,6 +1136,24 @@ Olen läbinud gümnaasiumis kursuse “Psühholoogia alused” ning ka Tartu Ül
 
   <!-- Minu lisatud katse 03.07.2023 -->
   <script src="script.js"></script>
+
+  <!-- Minu lisatud katse 26.07.2023 -->
+  <script>
+    // Function to open the lightbox
+    function openLightbox(imageUrl) {
+      const lightbox = document.getElementById("lightbox");
+      const lightboxImage = document.getElementById("lightbox-image");
+      lightboxImage.src = imageUrl;
+      lightbox.style.display = "block";
+    }
+  
+    // Function to close the lightbox
+    function closeLightbox() {
+      const lightbox = document.getElementById("lightbox");
+      lightbox.style.display = "none";
+    }
+  </script>
+  
 
 </body>
 

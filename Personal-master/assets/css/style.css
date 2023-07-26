@@ -34,6 +34,82 @@
 }
 /** 03.07.2023 lisa lõpp*/
 
+/** 26.07.2023 lisa algus*/
+
+/* Styles for the media container */
+.course .media {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three columns with equal width */
+  grid-gap: 10px; /* Add some spacing between the media items */
+  margin-top: 10px; /* Add spacing between the course description and media items */
+}
+
+/* Styles for each media item */
+.course .media img, .course .media embed, .course .media video {
+  max-width: 100%; /* Set the max-width to 100% */
+  height: 60%;
+  box-sizing: border-box; /* Include padding and borders in the specified width and height */
+}
+
+/* Image gallery container */
+.media {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center; /* Center align items vertically */
+}
+
+/* Style for each image */
+.responsive {
+  padding: 6px;
+  flex: 25%;
+  max-width: 100%
+  box-sizing: border-box; /* Ensures padding is included in the width */
+  display: flex;
+  justify-content: center; /* Center align content horizontally */;
+}
+
+/* Add a hover effect (opacity) when hovering over the image */
+.gallery img {
+  opacity: 0.8;
+  display: block; /* Removes extra space below the images */
+  max-width: 100%; /* Ensures the images don't overflow their containers */
+  height: auto; /* Keeps the aspect ratio of the images */
+  cursor: pointer;
+}
+
+.gallery img:hover {
+  opacity: 0.8;
+}
+
+/* Add a lightbox when clicked on the image */
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.lightbox-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+.lightbox img {
+  width: 100%;
+  height: auto;
+}
+
+
+/** 26.07.2023 lisa lõpp*/
+
 body {
   font-family: "Open Sans", sans-serif;
   background-color: #040404;
