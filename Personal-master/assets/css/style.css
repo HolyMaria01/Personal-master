@@ -39,8 +39,10 @@
 /* Styles for the media container */
 .course .media {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Three columns with equal width */
-  grid-gap: 10px; /* Add some spacing between the media items */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust the minmax values as needed */
+    gap: 10px; /* Adjust the gap size between grid items as needed */
+    justify-content: center; /* Center align items horizontally */
+    align-items: center; /* Center align items vertically */
   margin-top: 10px; /* Add spacing between the course description and media items */
 }
 
