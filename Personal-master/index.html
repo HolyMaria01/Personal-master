@@ -547,8 +547,7 @@ Olen läbinud gümnaasiumis kursuse “Psühholoogia alused” ning ka Tartu Ül
         <h3 class="course-title">HTML ja CSS</h3>
         <p class="course-description">Tutvusime HTML ja CSS koodikirjutamise põhimõtetega ning kasutasime neid erinevaid töölehti läbi tehes. Läbisime iseseivalt "Master the Basics of HTML5 & CSS3: Beginner Web Development" Udemy veebikursuse. Valmis nii ühe- kui mitmeleheline veebileht.</p>
         <div class="media">
-          <p>Mitmelehelise veebilehega saab tutuvuda <a href="https://kaldveemaarjaliiskd22.ikt.khk.ee/hotell/">siin.</a></p>
-          <p>Ühelehelise veebilehega saab tutvuda <a href="https://kaldveemaarjaliiskd22.ikt.khk.ee/firma/">siin.</a></p>
+          <p>Mitmelehelise veebilehega saab tutuvuda <a href="https://kaldveemaarjaliiskd22.ikt.khk.ee/hotell/">siin.</a> Ühelehelise veebilehega saab tutvuda <a href="https://kaldveemaarjaliiskd22.ikt.khk.ee/firma/">siin.</a></p>
         </div>
       </div>
   
@@ -614,8 +613,22 @@ Olen läbinud gümnaasiumis kursuse “Psühholoogia alused” ning ka Tartu Ül
         </ul>
       </p>
       <div class="media">
-        <img src="assets/img/veebikujundus/ux_words_2.jpg" alt="sõnapilv 1">
-        <img src="assets/img/veebikujundus/ux_words_3.jpg" alt="sõnapilv 2">
+        <div class="responsive">
+          <div class="gallery">
+            <a href="assets/img/veebikujundus/ux_words_2.jpg" onclick="openLightbox('assets/img/veebikujundus/ux_words_2.jpg'); return false;">
+             <img src="assets/img/veebikujundus/ux_words_2.jpg" alt="sõnapilv 1">
+            </a>
+            <div class="desc">Add a description of the image here</div>
+          </div>
+        </div>
+        <div class="responsive">
+          <div class="gallery">
+            <a href="assets/img/veebikujundus/ux_words_3.jpg" onclick="openLightbox('assets/img/veebikujundus/ux_words_3.jpg'); return false;">
+             <img src="assets/img/veebikujundus/ux_words_3.jpg" alt="sõnapilv 2">
+            </a>
+            <div class="desc">Add a description of the image here</div>
+          </div>
+        </div>
         <!-- <embed src="files/Veebikujunduse_trendid.pptx" type="application/pptx" alt="veebikursuse trendid esitlus"/>  --->
       </div>
     </div>
@@ -624,12 +637,40 @@ Olen läbinud gümnaasiumis kursuse “Psühholoogia alused” ning ka Tartu Ül
       <h3 class="course-title">Animatsioon</h3>
       <p class="course-description">Kasutasime peamiselt Adobe Affects keskkonda, kus kasutasime erinevaid tööritus, nagu näiteks pin tool. Valmisi liikuv foto Cinemagraph, 3D logo ning läbisime erinevaid After Effects keskkonnas olevaid õpetusi.</p>
       <div class="media">
-        <img src="assets/img/veebikujundus/3D_animatsion.gif" alt="3D logo">
-        <img src="assets/img/veebikujundus/skeleton_gif.gif" alt="luukere GIF">
-        <img src="assets/img/veebikujundus/snake_gif.gif" alt="mao GIF">
-        <video width="320" height="240" controls> 
-          <source src="assets/img/veebikujundus/cinemagraph_test.mp4" type="video/mp4" alt="cinemagraph">
-        </video>
+        <div class="responsive">
+          <div class="gallery">
+            <a href="assets/img/veebikujundus/3D_animatsion.gif" onclick="openLightbox('assets/img/veebikujundus/3D_animatsion.gif'); return false;">
+             <img src="assets/img/veebikujundus/3D_animatsion.gif" alt="3D logo">
+            </a>
+            <div class="desc">Add a description of the image here</div>
+          </div>
+        </div>
+        <div class="responsive">
+          <div class="gallery">
+            <a href="assets/img/veebikujundus/skeleton_gif.gif" onclick="openLightbox('assets/img/veebikujundus/skeleton_gif.gif'); return false;">
+             <img src="assets/img/veebikujundus/skeleton_gif.gif" alt="luukere GIF">
+            </a>
+            <div class="desc">Add a description of the image here</div>
+          </div>
+        </div>
+        <div class="responsive">
+          <div class="gallery">
+            <a href="assets/img/veebikujundus/snake_gif.gif" onclick="openLightbox('assets/img/veebikujundus/snake_gif.gif'); return false;">
+             <img src="assets/img/veebikujundus/snake_gif.gif" alt="mao GIF">
+            </a>
+            <div class="desc">Add a description of the image here</div>
+          </div>
+        </div>
+        <div class="responsive">
+          <div class="gallery">
+            <a href="assets/img/veebikujundus/cinemagraph_test.mp4" onclick="openLightbox('assets/img/veebikujundus/cinemagraph_test.mp4'); return false;">
+             <video width="320" height="240" controls> 
+              <source src="assets/img/veebikujundus/cinemagraph_test.mp4" type="video/mp4" alt="cinemagraph">
+            </video>
+           </a>
+            <div class="desc">Add a description of the image here</div>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -637,7 +678,7 @@ Olen läbinud gümnaasiumis kursuse “Psühholoogia alused” ning ka Tartu Ül
       <h3 class="course-title">Sissejuhatus kasutajaliidese disaini</h3>
       <p class="course-description">Oli lõimitud graafilise disaini kursusega. Tegime värvidega soetud ülesandeid, Photohopi töölehti ning tegime kokkuvõtte Pixel Perfect Precision ehk Ui piibli raamatust.</p>
       <div class="media">
-        <img src="path/to/image1.jpg" alt="Screenshot 1">
+        <!--<embed src="files/Don't_make_my_think.docx" type="application/docx" alt="Don't make me think raamatu märkmed"/> -->
       </div>
     </div>
 
@@ -653,7 +694,38 @@ Olen läbinud gümnaasiumis kursuse “Psühholoogia alused” ning ka Tartu Ül
         </ul>
       </p>
       <div class="media">
-        <img src="path/to/image1.jpg" alt="Screenshot 1">
+        <div class="responsive">
+          <div class="gallery">
+            <a href="assets/img/veebikujundus/bikablo.jpg" onclick="openLightbox('assets/img/veebikujundus/bikablo.jpg'); return false;">
+             <img src="assets/img/veebikujundus/bikablo.jpg" alt="Bikablo visualiseerimine">
+            </a>
+            <div class="desc">Add a description of the image here</div>
+          </div>
+        </div>
+        <div class="responsive">
+          <div class="gallery">
+            <a href="assets/img/veebikujundus/luule_kalligramm.jpg" onclick="openLightbox('assets/img/veebikujundus/luule_kalligramm.jpg'); return false;">
+             <img src="assets/img/veebikujundus/luule_kalligramm.jpg" alt="kalligramm luulena">
+            </a>
+            <div class="desc">Add a description of the image here</div>
+          </div>
+        </div>
+        <div class="responsive">
+          <div class="gallery">
+            <a href="assets/img/veebikujundus/sõnad_kalligramm.jpg" onclick="openLightbox('assets/img/veebikujundus/sõnad_kalligramm.jpg'); return false;">
+             <img src="assets/img/veebikujundus/sõnad_kalligramm.jpg" alt="kalligramm sõnadest">
+            </a>
+            <div class="desc">Add a description of the image here</div>
+          </div>
+        </div>
+        <div class="responsive">
+          <div class="gallery">
+            <a href="assets/img/veebikujundus/monog_animated.svg" onclick="openLightbox('assets/img/veebikujundus/monog_animated.svg'); return false;">
+             <img src="assets/img/veebikujundus/monog_animated.svg" alt="animeeritud monogramm">
+            </a>
+            <div class="desc">Add a description of the image here</div>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -661,7 +733,7 @@ Olen läbinud gümnaasiumis kursuse “Psühholoogia alused” ning ka Tartu Ül
       <h3 class="course-title">Struktuurikavand</h3>
       <p class="course-description">Aine on lõimitud sisuhaldussüsteemi ja projektihalduse kursustega. Kursuse raames tegelesime kliendiprojekti ja oma protfoolio kavandi loomisega. Õppisime ka tüpograafiat ja tasuta fontide võimalusi ning analüüsisime ja parandasime Rosabella projekti. </p>
       <div class="media">
-        <img src="path/to/image1.jpg" alt="Screenshot 1">
+        <p>Portfoolio kavandiga saab tutvuda <a href="https://www.figma.com/proto/9ebNZQ2Be5iEXxLhWN7Lfw/Portfoolio?type=design&node-id=106-2&t=SFkEjHqFL4LPndwb-1&scaling=scale-down&page-id=103%3A105&starting-point-node-id=106%3A2&mode=design">siin.</a></p>
       </div>
     </div>
   </div>
