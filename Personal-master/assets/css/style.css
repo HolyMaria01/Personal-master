@@ -104,9 +104,50 @@
 
 /** 26.07.2023 lisa lõpp*/
 
-/** 02.08.2023 lisa algus*/
+/** 06.08.2023 lisa algus*/
+/* Style for the table of contents container */
+.table-of-contents-container {
+  display: flex;
+  justify-content: center; /* Align the contents horizontally to the center */
+  padding-bottom: 10px;
+}
 
-/** 02.08.2023 lisa lõpp*/
+/* Style for the table of contents */
+.table-of-contents {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.table-of-contents li {
+  width: 30%; 
+  margin-bottom: 5px;
+}
+
+.table-of-contents li a {
+  display: block;
+  background-color: #35e888;
+  text-align: center;
+  opacity: 90%;
+  color: rgba(0, 0, 0, 0.9);
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.table-of-contents li a:hover {
+  background-color: #4bf0a5;
+  opacity: 150%;
+}
+
+
+
+/** 06.08.2023 lisa lõpp*/
 
 body {
   font-family: "Open Sans", sans-serif;
