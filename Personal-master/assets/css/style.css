@@ -17,67 +17,104 @@
 }
 .module-title {
   font-weight: bold;
-  font-size: 18px;
+  font-size: 24px;
 }
 .course {
   margin-bottom: 10px;
 }
 .course-title {
   font-weight: bold;
-  font-size: 16px;
+  font-size: 18px;
 }
 .course-description {
-  margin-bottom: 5px;
-}
-.media {
   margin-bottom: 10px;
 }
+
 /** 03.07.2023 lisa lõpp*/
 
 
 /** 26.07.2023 lisa algus*/
 
 /* Styles for the media container */
-.course .media {
-  display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust the minmax values as needed */
-    gap: 10px; /* Adjust the gap size between grid items as needed */
-    justify-content: center; /* Center align items horizontally */
-    align-items: center; /* Center align items vertically */
-  margin-top: 20px; /* Add spacing between the course description and media items */
-}
-
-/* Image gallery container */
-.media {
+div.media {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: center; /* Center align items horizontally */
   align-items: center; /* Center align items vertically */
+  margin-top: 20px; /* Add spacing between the course description and media items */
+  margin-bottom: 20px;
 }
 
 /* Style for each image */
-.responsive {
+div.responsive {
   padding: 6px;
-  flex: 25%;
-  max-width: 100%;
+  max-width: calc(33.333% - 12px); /* Distribute images evenly with some spacing */
+  box-sizing: border-box;
 }
 
-/* Add a hover effect (opacity) when hovering over the image */
-.gallery img {
+div.gallery {
+  border: 1px solid #ccc;
+  height: 335px; /* Set a fixed height for the gallery container */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden; /* Prevent overflowing content */
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
   opacity: 0.8;
-  display: block; /* Removes extra space below the images */
-  max-width: 100%; /* Ensures the images don't overflow their containers */
-  height: auto; /* Keeps the aspect ratio of the images */
+  display: block;
+  width: 100%;
+  height: 200px; /* Set a fixed height for the images */
+  object-fit: cover; /* Maintain aspect ratio while filling the container */
   cursor: pointer;
 }
 
-.gallery img:hover {
+div.gallery img:hover {
   opacity: 0.8;
 }
 
+div.desc {
+  padding: 15px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* Make the description take up the entire height */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media only screen and (max-width: 900px) {
+  .responsive {
+    max-width: calc(49.999% - 12px);
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    max-width: calc(100% - 12px);
+    margin: 6px auto; /* Center the image and text within the available space */
+  }
+}
+
+
 /* Add a lightbox when clicked on the image */
 .lightbox {
-  display: none;
+  display: block;
   position: fixed;
   z-index: 999;
   top: 0;
@@ -100,7 +137,9 @@
   border-radius: 10px; /* Optionally, add rounded corners to the content */
   position: relative; /* Position the content */
   text-align: center; /* Center the content horizontally */
+  margin-top: 10vh; /* Adjust the margin as needed */
 }
+
 
 
 .lightbox img {
