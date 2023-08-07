@@ -86,21 +86,29 @@
   height: 100%;
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.9);
+  align-items: center; /* Vertically center content */
+  justify-content: center; /* Horizontally center content */
+  display: flex; /* Use flexbox for centering */
 }
+
 
 .lightbox-content {
-  margin: auto;
   display: block;
-  width: 80%;
-  max-width: 700px;
+  max-width: 100%; /* Adjust the width as needed */
+  max-height: 100vh; /* Limit the height to 80% of the viewport height */
+  overflow: hidden; /* Hide any overflow if the image is larger */
+  border-radius: 10px; /* Optionally, add rounded corners to the content */
+  position: relative; /* Position the content */
+  text-align: center; /* Center the content horizontally */
 }
+
 
 .lightbox img {
-  width: 100%;
-  height: auto;
-  justify-content: center;
+  max-width: 80%; /* Make sure the image doesn't exceed the content width */
+  max-height: 60%; /* Make sure the image doesn't exceed the content height */
+  display: block; /* Remove any default image spacing */
+  margin: auto; /* Center the image within the content */
 }
-
 
 /** 26.07.2023 lisa lõpp*/
 
@@ -108,8 +116,8 @@
 /* Style for the table of contents container */
 .table-of-contents-container {
   display: flex;
-  justify-content: center; /* Align the contents horizontally to the center */
-  padding-bottom: 10px;
+  justify-content: center;
+  padding-bottom: 15px;
 }
 
 /* Style for the table of contents */
@@ -117,23 +125,24 @@
   list-style: none;
   padding: 0;
   margin: 0;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three equal-width columns */
   gap: 10px;
+  width: 90%; /* Adjust this width as needed */
+  margin: 0 auto; /* Center the table of contents within the container */
 }
 
-.table-of-contents li {
-  width: 30%; 
+.table-of-contents li { 
   margin-bottom: 5px;
 }
 
 .table-of-contents li a {
   display: block;
   background-color: #35e888;
-  text-align: center;
-  opacity: 90%;
+  opacity: 0.9;
   color: rgba(0, 0, 0, 0.9);
   text-decoration: none;
+  text-align: center;
   padding: 10px;
   border-radius: 5px;
   font-weight: bold;
@@ -142,8 +151,9 @@
 
 .table-of-contents li a:hover {
   background-color: #4bf0a5;
-  opacity: 150%;
+  opacity: 1.5;
 }
+
 
 
 
