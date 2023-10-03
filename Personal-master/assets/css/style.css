@@ -9,12 +9,14 @@
 # General
 --------------------------------------------------------------*/
 
+
 /** 03.07.2023 lisa */
 .module {
   margin-top: 10px;
   margin-bottom: 20px;
   border: 2px solid #35e888;
   padding: 10px;
+  background: rgba(204, 204, 204, 0.1);
 }
 .module-title {
   font-weight: bold;
@@ -183,12 +185,43 @@ div.desc {
   text-decoration: none;
   text-align: center;
   padding: 10px;
-  border-radius: 5px;
+  border-radius: 6px;
   font-weight: bold;
   transition: background-color 0.3s ease;
 }
 
 .table-of-contents li a:hover {
+  background-color: #4bf0a5;
+  opacity: 1.5;
+}
+
+/** 03.10.2023 lisa */
+.hide-content {
+  display: none;
+}
+
+/* Style the button */
+button#read-more-button {
+  display: block;
+  font-family: "Open Sans", sans-serif;
+  background-color: #35e888; /* Button color */
+  opacity: 0.9;
+  color: rgba(0, 0, 0, 0.9);
+  font-size: 0.8rem; /* Text size */
+  padding: 12px 10px; /* Vertical and horizontal padding */
+  text-align: center;
+  border-radius: 6px;
+  border: none; /* Remove border */
+  cursor: pointer; /* Add a pointer cursor on hover */
+  transition: background-color 0.3s ease;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* Style the button on hover */
+button#read-more-button:hover {
   background-color: #4bf0a5;
   opacity: 1.5;
 }
