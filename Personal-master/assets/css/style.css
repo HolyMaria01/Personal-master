@@ -201,7 +201,7 @@ div.desc {
 }
 
 /* Style the button */
-button#read-more-button {
+#read-more-button {
   display: block;
   font-family: "Open Sans", sans-serif;
   background-color: #35e888; /* Button color */
@@ -221,7 +221,7 @@ button#read-more-button {
 }
 
 /* Style the button on hover */
-button#read-more-button:hover {
+#read-more-button:hover {
   background-color: #4bf0a5;
   opacity: 1.5;
 }
