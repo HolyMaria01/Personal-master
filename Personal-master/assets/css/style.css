@@ -9,14 +9,12 @@
 # General
 --------------------------------------------------------------*/
 
-
 /** 03.07.2023 lisa */
 .module {
   margin-top: 10px;
   margin-bottom: 20px;
   border: 2px solid #35e888;
   padding: 10px;
-  background: rgba(204, 204, 204, 0.1);
 }
 .module-title {
   font-weight: bold;
@@ -34,7 +32,7 @@
   margin-bottom: 10px;
 }
 
-/** 03.07.2023 lisa lõpp*/
+/** 03.07.2023 lisa l천pp*/
 
 
 /** 26.07.2023 lisa algus*/
@@ -151,7 +149,7 @@ div.desc {
 }
 
 
-/** 26.07.2023 lisa lõpp*/
+/** 26.07.2023 lisa l천pp*/
 
 /** 06.08.2023 lisa algus*/
 /* Style for the table of contents container */
@@ -185,7 +183,7 @@ div.desc {
   text-decoration: none;
   text-align: center;
   padding: 10px;
-  border-radius: 6px;
+  border-radius: 5px;
   font-weight: bold;
   transition: background-color 0.3s ease;
 }
@@ -194,6 +192,7 @@ div.desc {
   background-color: #4bf0a5;
   opacity: 1.5;
 }
+/** 06.08.2023 lisa l천pp*/
 
 /** 03.10.2023 lisa */
 .hide-content {
@@ -201,7 +200,7 @@ div.desc {
 }
 
 /* Style the button */
-#read-more-button {
+button#read-more-button {
   display: block;
   font-family: "Open Sans", sans-serif;
   background-color: #35e888; /* Button color */
@@ -221,15 +220,11 @@ div.desc {
 }
 
 /* Style the button on hover */
-#read-more-button:hover {
+button#read-more-button:hover {
   background-color: #4bf0a5;
   opacity: 1.5;
 }
 
-
-
-
-/** 06.08.2023 lisa lõpp*/
 
 body {
   font-family: "Open Sans", sans-serif;
@@ -275,6 +270,7 @@ h5,
 h6 {
   font-family: "Raleway", sans-serif;
 }
+
 
 /*--------------------------------------------------------------
 # Header
@@ -1015,9 +1011,10 @@ section .container {
   line-height: 24px;
   font-size: 14px;
   margin-bottom: 0;
+  text-align: left;
 }
 
-.services .icon-box:hover {
+/*.services .icon-box:hover {
   background: #18d26e;
   border-color: #18d26e;
 }
@@ -1033,8 +1030,11 @@ section .container {
 .services .icon-box:hover .icon::before {
   background: #35e888;
 }
+*/
+.services .icon-box:hover h4 a {
+  color: #35e888;
+}
 
-.services .icon-box:hover h4 a,
 .services .icon-box:hover p {
   color: #fff;
 }
