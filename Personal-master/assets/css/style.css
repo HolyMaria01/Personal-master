@@ -147,9 +147,42 @@ div.desc {
   display: block; /* Remove any default image spacing */
   margin: auto; /* Center the image within the content */
 }
+/** 26.07.2023 lisa lõpp*/
+
+/** 09.11.2023 lisa algus*/
+/* Styles for the media container*/
+div.media-internship {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* Style for the accordion button */
+button.accordion {
+  display: block;
+  background-color: rgba(0, 0, 0, 0.089);
+  opacity: 0.9;
+  color: #18d26e;
+  text-decoration: none;
+  text-align: center;
+  padding: 0px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  border: none; 
+}
+
+button.accordion:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+  opacity: 1.5;
+  color: #35e888;
+}
 
 
-/** 26.07.2023 lisa l천pp*/
+/** 09.11.2023 lisa lõpp*/
 
 /** 06.08.2023 lisa algus*/
 /* Style for the table of contents container */

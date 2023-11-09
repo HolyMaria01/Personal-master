@@ -393,8 +393,9 @@
         
         <div class="col-lg-6">
           <div class="resume-item">
-            <p>Näited tehtud töödest</p>
-            <div class="media">
+            <!-- <p>Näited tehtud töödest</p> -->
+            <button class="accordion">VAATAMISEKS</button>
+            <div class="media-internship" id="mediaContainer" style="display: none;">
               <div class="gallery mb-4" style="width: 600px; height: 335px;">
                 <a href="assets/img/praktikad/Praktikaplaan_esitus_cover.png">
                   <img src="assets/img/praktikad/Praktikaplaan_esitus_cover.png" alt="Praktikaplaani esitlus" class="img-fluid">
@@ -448,8 +449,9 @@
         
         <div class="col-lg-6">
           <div class="resume-item">
-            <p>Näited tehtud töödest</p>
-            <div class="media">
+            <!-- <p>Näited tehtud töödest</p> -->
+            <button class="accordion">VAATAMISEKS</button>
+            <div class="media-internship" id="mediaContainer" style="display: none;">
               <div class="gallery mb-4" style="width: 600px; height: 335px;">
                 <a href="assets/img/praktikad/Praktikaplaan_esitus_cover.png">
                   <img src="assets/img/praktikad/Praktikaplaan_esitus_cover.png" alt="Praktikaplaani esitlus" class="img-fluid">
@@ -495,8 +497,9 @@
         
         <div class="col-lg-6">
           <div class="resume-item">
-            <p>Näited tehtud töödest</p>
-            <div class="media">
+            <!-- <p>Näited tehtud töödest</p> -->
+            <button class="accordion">VAATAMISEKS</button>
+            <div class="media-internship" id="mediaContainer" style="display: none;">
               <div class="gallery mb-4" style="width: 600px; height: 335px;">
                 <a href="assets/img/praktikad/Praktikaplaan_esitus_cover.png">
                   <img src="assets/img/praktikad/Praktikaplaan_esitus_cover.png" alt="Praktikaplaani esitlus" class="img-fluid">
@@ -1494,6 +1497,21 @@
        }
     });
  </script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var accordionButton = document.querySelector(".accordion");
+    var mediaContainer = document.getElementById("mediaContainer");
+
+    accordionButton.addEventListener("click", function () {
+      if (mediaContainer.style.display === "none") {
+        mediaContainer.style.display = "flex";
+      } else {
+        mediaContainer.style.display = "none";
+      }
+    });
+  });
+</script>
 
 </body>
 
