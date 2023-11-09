@@ -55,7 +55,7 @@ div.responsive {
 }
 
 div.gallery {
-  border: 1px solid #ccc;
+  border: 1px solid #777;
   height: 335px; /* Set a fixed height for the gallery container */
   display: flex;
   flex-direction: column;
@@ -64,7 +64,7 @@ div.gallery {
 }
 
 div.gallery:hover {
-  border: 1px solid #777;
+  border: 1px solid #ccc;
 }
 
 div.gallery img {
@@ -653,7 +653,8 @@ section .container {
 }
 
 .about-me .resume-item ul li {
-  padding-bottom: 10px;
+  padding-bottom: 20px;
+  padding-top: 20px;
 }
 
 .about-me .resume-item:last-child {
