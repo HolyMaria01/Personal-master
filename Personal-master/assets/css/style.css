@@ -163,12 +163,13 @@ div.media-internship {
 /* Style for the accordion button */
 button.accordion {
   display: block;
-  background-color: rgba(0, 0, 0, 0.089);
+  background-color: rgba(27, 27, 27, 0.707);
   opacity: 0.9;
   color: #18d26e;
   text-decoration: none;
   text-align: center;
   padding: 0px 20px;
+  width: 100%;
   border-radius: 5px;
   font-weight: bold;
   cursor: pointer;
@@ -176,7 +177,7 @@ button.accordion {
 }
 
 button.accordion:hover {
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(27, 27, 27, 0.707);
   opacity: 1.5;
   color: #35e888;
 }
@@ -944,6 +945,7 @@ section .container {
   margin-top: -2px;
   border-left: 2px solid rgba(255, 255, 255, 0.2);
   position: relative;
+  background-color: rgba(27, 27, 27, 0.707);
 }
 
 .resume .resume-item h4 {
