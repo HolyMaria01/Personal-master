@@ -1317,7 +1317,7 @@ section .container {
   padding: 15px;
   text-align: right;
   font-size: 13px;
-  color: #fff;
+  color: #ffffff00;
   z-index: 999999;
 }
 
@@ -1325,15 +1325,15 @@ section .container {
   .credits {
     text-align: center;
     padding: 10px;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0);
   }
 }
 
 .credits a {
-  color: #18d26e;
+  color: #18d26f00;
   transition: 0.3s;
 }
 
 .credits a:hover {
-  color: #fff;
+  color: #ffffff00;
 }
