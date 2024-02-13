@@ -393,8 +393,8 @@
         <div class="col-lg-6">
           <div class="resume-item">
             <!-- <p>Näited tehtud töödest</p> -->
-            <button class="accordion"><u>NÄITED TEHTUD TÖÖDEST LEIAD SIIT</u></button>
-            <div class="media-internship" id="mediaContainer" style="display: none;">
+            <button class="accordion" data-target="mediaContainer1"><u>NÄITED TEHTUD TÖÖDEST LEIAD SIIT</u></button>
+                    <div class="media-internship" id="mediaContainer1" style="display: none;">
               <div class="gallery mb-4" style="width: 600px; height: 335px;">
                 <a href="assets/img/praktikad/Praktikaplaan_esitus_cover.png">
                   <img src="assets/img/praktikad/Praktikaplaan_esitus_cover.png" alt="Praktikaplaani esitlus" class="img-fluid">
@@ -451,8 +451,8 @@
         <div class="col-lg-6">
           <div class="resume-item">
             <!-- <p>Näited tehtud töödest</p> -->
-            <button class="accordion"><u>NÄITED TEHTUD TÖÖDEST LEIAD SIIT</u></button>
-            <div class="media-internship" id="mediaContainer" style="display: none;">
+            <button class="accordion" data-target="mediaContainer2"><u>NÄITED TEHTUD TÖÖDEST LEIAD SIIT</u></button>
+                    <div class="media-internship" id="mediaContainer2" style="display: none;">
               <div class="gallery mb-4" style="width: 600px; height: 335px;">
                 <a href="assets/img/praktikad/Praktikaplaan_esitus_cover.png">
                   <img src="assets/img/praktikad/Praktikaplaan_esitus_cover.png" alt="Praktikaplaani esitlus" class="img-fluid">
@@ -501,8 +501,8 @@
         <div class="col-lg-6">
           <div class="resume-item">
             <!-- <p>Näited tehtud töödest</p> -->
-            <button class="accordion"><u>NÄITED TEHTUD TÖÖDEST LEIAD SIIT</u></button>
-            <div class="media-internship" id="mediaContainer" style="display: none;">
+            <button class="accordion" data-target="mediaContainer3"><u>NÄITED TEHTUD TÖÖDEST LEIAD SIIT</u></button>
+                    <div class="media-internship" id="mediaContainer3" style="display: none;">
               <div class="gallery mb-4" style="width: 600px; height: 335px;">
                 <a href="assets/img/praktikad/Praktikaplaan_esitus_cover.png">
                   <img src="assets/img/praktikad/Praktikaplaan_esitus_cover.png" alt="Praktikaplaani esitlus" class="img-fluid">
@@ -1469,7 +1469,7 @@
     }
   </script>
   
-   <!-- Minu lisatud katse 03.10.2023 - Loe rohkem nupp -->
+   <!-- Minu lisatud katse 03.10.2023/13.02.2024 - Loe rohkem nupp -->
    <script>
     document.addEventListener("DOMContentLoaded", function() {
         var readMoreButtons = document.querySelectorAll(".module-content #read-more-button");
@@ -1489,19 +1489,21 @@
     });
    </script>
 
- <!-- Minu lisatud katse 09.11.2023 - Näita rohkem akrodion nupp -->
-<script>
+ <!-- Minu lisatud katse 09.11.2023/13.02.2024 - Näita rohkem akrodion nupp -->
+ <script>
   document.addEventListener("DOMContentLoaded", function () {
-    var accordionButton = document.querySelector(".accordion");
-    var mediaContainer = document.getElementById("mediaContainer");
-
-    accordionButton.addEventListener("click", function () {
-      if (mediaContainer.style.display === "none") {
-        mediaContainer.style.display = "flex";
-      } else {
-        mediaContainer.style.display = "none";
-      }
-    });
+      var accordionButtons = document.querySelectorAll(".accordion");
+      accordionButtons.forEach(function (button) {
+          button.addEventListener("click", function () {
+              var targetId = this.getAttribute("data-target");
+              var mediaContainer = document.getElementById(targetId);
+              if (mediaContainer.style.display === "none") {
+                  mediaContainer.style.display = "flex";
+              } else {
+                  mediaContainer.style.display = "none";
+              }
+          });
+      });
   });
 </script>
 
