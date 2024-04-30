@@ -55,7 +55,9 @@ div.responsive {
 }
 
 div.gallery {
-  border: 1px solid #777;
+  border: none;
+  background-color: #040404;
+  border-radius: 16px;
   height: 335px; /* Set a fixed height for the gallery container */
   display: flex;
   flex-direction: column;
@@ -941,9 +943,10 @@ section .container {
 }
 
 .resume .resume-item {
-  padding: 0 0 20px 20px;
+  padding: 0 20px 20px 20px;
   margin-top: -2px;
   border-left: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 0px 16px 16px 0px ;
   position: relative;
   background-color: rgba(27, 27, 27, 0.707);
 }
