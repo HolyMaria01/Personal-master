@@ -56,42 +56,47 @@ div.responsive {
 
 div.gallery {
   border: none;
-  background-color: #040404;
+  background-color: rgba(255, 255, 255, 0.1);
   border-radius: 16px;
-  max-width: 800px; /* Set a maximum width */
+  max-width: 600px; /* Set a maximum width */
+  margin-top: 30px;
   margin-bottom: 20px; /* Add margin between gallery items */
   overflow: hidden; /* Prevent overflowing content */
   position: relative; /* Position relative for absolute positioning of description */
 }
 
 div.gallery:hover {
-  border: 1px solid #ccc;
+  border: 2px solid #4bf0a5;
 }
 
 div.gallery img {
   opacity: 0.8;
   display: block;
   width: 100%;
-  max-height: 300px; /* Set a maximum height for the images */
+  max-height: 260px; /* Set a maximum height for the images */
   object-fit: cover; /* Maintain aspect ratio while filling the container */
   cursor: pointer;
 }
 
 div.desc {
-  position: absolute; /* Position absolute for precise positioning */
   bottom: 0; /* Align description to the bottom of the container */
   left: 0; /* Align description to the left of the container */
   width: 100%; /* Set width to match container */
-  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for better readability */
-  color: #fff; /* Set text color */
+  background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background for better readability */
+  color: #f5f0f0; /* Set text color */
   padding: 20px; /* Add padding to the description */
   font-size: 16px; /* Set font size */
-  text-align: center; /* Center align text */
   box-sizing: border-box; /* Include padding in width calculation */
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* Make the description take up the entire height */
 }
 
 div.gallery img:hover {
-  opacity: 0.8;
+  opacity: 0.5;
 }
 
 /* Media query for smaller screens */
@@ -99,18 +104,6 @@ div.gallery img:hover {
   div.responsive {
     width: calc(50% - 12px); /* Adjust width for smaller screens */
   }
-}
-
-
-
-div.desc {
-  padding: 15px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100%; /* Make the description take up the entire height */
 }
 
 * {
@@ -966,20 +959,21 @@ section .container {
 .resume .resume-item {
   padding: 20px 20px 20px 20px;
   margin-top: 20px;
-  border-left: 2px solid rgba(255, 255, 255, 0.2);
+  border-left: 3px solid rgba(255, 255, 255, 0.2);
   border-radius: 0px 16px 16px 0px ;
   position: relative;
-  background-color: rgba(27, 27, 27, 0.707);
+  background-color: rgba(255, 255, 255, 0.08);
 }
 
 .resume .resume-item h4 {
   line-height: 18px;
-  font-size: 18px;
+  font-size: 22px;
   font-weight: 600;
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
   color: #18d26e;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+  margin-top: 8px;
 }
 
 .resume .resume-item h5 {
@@ -988,15 +982,19 @@ section .container {
   padding: 5px 15px;
   display: inline-block;
   font-weight: 600;
-  margin-bottom: 10px;
+  margin-bottom: 26px;
 }
 
 .resume .resume-item ul {
   padding-left: 20px;
 }
 
+.resume .resume-item p {
+  padding-bottom: 8px;
+}
+
 .resume .resume-item ul li {
-  padding-bottom: 10px;
+  padding-bottom: 6px;
 }
 
 .resume .resume-item:last-child {
