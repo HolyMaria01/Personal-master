@@ -9,6 +9,8 @@
 # General
 --------------------------------------------------------------*/
 
+
+
 /** 03.07.2023 lisa */
 .module {
   margin-top: 10px;
@@ -945,6 +947,81 @@ section .container {
   background-color: #18d26e;
 }
 
+
+
+
+
+/*--------------------------------------------------------------
+# services Testimonials
+--------------------------------------------------------------*/
+.services .col-md-6 {
+  height: 100%;
+}
+
+.unique-swiper {
+  height: max-content;
+}
+
+.services .testimonials-carousel,
+.services .testimonials-slider {
+  overflow: hidden;
+}
+
+.services .testimonial-item {
+  box-sizing: content-box;
+  min-height: 320px;
+}
+
+.services .testimonial-item .testimonial-img {
+  width: 90px;
+  border-radius: 50%;
+  margin: -40px 0 0 40px;
+  position: relative;
+  z-index: 2;
+  border: 6px solid rgba(255, 255, 255, 0.12);
+}
+
+.services .testimonial-item h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0 5px 45px;
+  color: #fff;
+}
+
+.services .testimonial-item h4 {
+  font-size: 14px;
+  color: #999;
+  margin: 0 0 0 45px;
+}
+
+.services .testimonial-item p {
+  font-style: italic;
+  margin: 0 15px 0 15px;
+  padding: 20px 20px 60px 20px;
+  background: rgba(255, 255, 255, 0.1);
+  position: relative;
+  border-radius: 6px;
+  position: relative;
+  z-index: 1;
+}
+
+.services .swiper-pagination {
+  margin-top: 20px;
+  position: relative;
+}
+
+.services .swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  opacity: 1;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.services .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #18d26e;
+}
+
+
 /*--------------------------------------------------------------
 # Resume
 --------------------------------------------------------------*/
@@ -1017,6 +1094,7 @@ section .container {
 # Services
 --------------------------------------------------------------*/
 .services .icon-box {
+  height: fit-content;
   text-align: center;
   background: rgba(204, 204, 204, 0.1);
   padding: 80px 20px;

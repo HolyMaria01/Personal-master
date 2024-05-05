@@ -211,6 +211,30 @@
 
   });
 
+  
+// Initialize Swiper sliders using the appropriate classes
+var swiperInstances = document.querySelectorAll('.unique-swiper');
+
+swiperInstances.forEach(function(swiperInstance) {
+  new Swiper(swiperInstance, {
+    speed: 600,
+    loop: true,
+    autoplay: {
+      delay: 2500,
+      waitForTransition: true,
+    },
+    slidesPerView: 1,
+    pagination: {
+      el: swiperInstance.querySelector('.swiper-pagination'),
+      type: 'bullets',
+      clickable: true
+    },
+    // Other configuration options...
+  });
+});
+
+
+
   /**
    * Initiate portfolio lightbox 
   const portfolioLightbox = GLightbox({
