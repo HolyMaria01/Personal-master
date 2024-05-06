@@ -235,6 +235,28 @@ swiperInstances.forEach(function(swiperInstance) {
 
 
 
+
+// Get all the icon-box elements
+const iconBoxes = document.querySelectorAll('.services .icon-box');
+
+// Initialize a variable to store the tallest height
+let tallestHeight = 0;
+
+// Loop through each icon-box element to find the tallest height
+iconBoxes.forEach(iconBox => {
+    const iconBoxHeight = iconBox.clientHeight;
+    if (iconBoxHeight > tallestHeight) {
+        tallestHeight = iconBoxHeight;
+    }
+});
+
+// Set the minimum height of all icon-box elements to match the tallest height
+iconBoxes.forEach(iconBox => {
+    iconBox.style.minHeight = tallestHeight + 'px';
+});
+
+
+
   /**
    * Initiate portfolio lightbox 
   const portfolioLightbox = GLightbox({

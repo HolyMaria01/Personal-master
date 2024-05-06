@@ -9,243 +9,6 @@
 # General
 --------------------------------------------------------------*/
 
-
-
-/** 03.07.2023 lisa */
-.module {
-  margin-top: 10px;
-  margin-bottom: 20px;
-  border: 2px solid #35e888;
-  padding: 10px;
-}
-.module-title {
-  font-weight: bold;
-  font-size: 24px;
-}
-.course {
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-.course-title {
-  font-weight: bold;
-  font-size: 18px;
-}
-.course-description {
-  margin-bottom: 10px;
-}
-
-/** 03.07.2023 lisa l천pp*/
-
-
-/** 26.07.2023 lisa algus*/
-
-/* Styles for the media container */
-div.media {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center; /* Center align items horizontally */
-  align-items: center; /* Center align items vertically */
-  margin-top: 40px; /* Add spacing between the course description and media items */
-  margin-bottom: 20px;
-}
-
-/* Style for each image */
-div.responsive {
-  padding: 6px;
-  width: calc(33.333% - 12px); /* Distribute images evenly with some spacing */
-  box-sizing: border-box;
-}
-
-div.gallery {
-  border: none;
-  background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 16px;
-  max-width: 600px; /* Set a maximum width */
-  margin-top: 30px;
-  margin-bottom: 20px; /* Add margin between gallery items */
-  overflow: hidden; /* Prevent overflowing content */
-  position: relative; /* Position relative for absolute positioning of description */
-}
-
-div.gallery:hover {
-  border: 2px solid #4bf0a5;
-}
-
-div.gallery img {
-  opacity: 0.8;
-  display: block;
-  width: 100%;
-  max-height: 260px; /* Set a maximum height for the images */
-  object-fit: cover; /* Maintain aspect ratio while filling the container */
-  cursor: pointer;
-}
-
-div.desc {
-  bottom: 0; /* Align description to the bottom of the container */
-  left: 0; /* Align description to the left of the container */
-  width: 100%; /* Set width to match container */
-  background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background for better readability */
-  color: #f5f0f0; /* Set text color */
-  padding: 20px; /* Add padding to the description */
-  font-size: 16px; /* Set font size */
-  box-sizing: border-box; /* Include padding in width calculation */
-  text-align: left;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100%; /* Make the description take up the entire height */
-}
-
-div.gallery img:hover {
-  opacity: 0.5;
-}
-
-/* Media query for smaller screens */
-@media (max-width: 768px) {
-  div.responsive {
-    width: calc(50% - 12px); /* Adjust width for smaller screens */
-  }
-}
-
-* {
-  box-sizing: border-box;
-}
-
-.clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-@media only screen and (max-width: 900px) {
-  .responsive {
-    max-width: calc(49.999% - 12px);
-  }
-}
-
-@media only screen and (max-width: 700px) {
-  .responsive {
-    max-width: calc(100% - 12px);
-    margin: 6px auto; /* Center the image and text within the available space */
-  }
-}
-
-
-/* Add a lightbox when clicked on the image */
-.lightbox {
-  display: none; /* Hide the lightbox by default */
-  position: fixed;
-  z-index: 999;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgba(0, 0, 0, 0.9);
-  display: flex; /* Use flexbox for centering */
-  align-items: center;
-  justify-content: center;
-}
-
-.lightbox-content {
-  display: block;
-  margin-top: 80px;
-  max-width: 100%; /* Adjust the width as needed */
-  max-height: 100vh; /* Limit the height to 80% of the viewport height */
-  overflow: auto; /* Enable scrolling for larger images */
-  border-radius: 10px; /* Optionally, add rounded corners to the content */
-  position: relative; /* Position the content */
-  text-align: center; /* Center the content horizontally */
-}
-
-.lightbox img {
-  max-width: 80%; /* Make sure the image doesn't exceed the content width */
-  max-height: none; 
-  display: block; /* Remove any default image spacing */
-  margin: auto; /* Center the image within the content */
-}
-/** 26.07.2023 lisa lõpp*/
-
-/** 09.11.2023 lisa algus*/
-/* Styles for the media container*/
-div.media-internship {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-/* Style for the accordion button */
-button.accordion {
-  display: block;
-  background-color: rgba(27, 27, 27, 0.707);
-  opacity: 0.9;
-  color: #18d26e;
-  text-decoration: none;
-  text-align: center;
-  padding: 0px 20px;
-  width: 100%;
-  border-radius: 5px;
-  font-weight: bold;
-  cursor: pointer;
-  border: none; 
-}
-
-button.accordion:hover {
-  background-color: rgba(27, 27, 27, 0.707);
-  opacity: 1.5;
-  color: #35e888;
-}
-
-
-/** 09.11.2023 lisa lõpp*/
-
-/** 06.08.2023 lisa algus*/
-/* Style for the table of contents container */
-.table-of-contents-container {
-  display: flex;
-  justify-content: center;
-  padding-bottom: 15px;
-}
-
-/* Style for the table of contents */
-.table-of-contents {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Three equal-width columns */
-  gap: 10px;
-  width: 90%; /* Adjust this width as needed */
-  margin: 0 auto; /* Center the table of contents within the container */
-}
-
-.table-of-contents li { 
-  margin-bottom: 5px;
-}
-
-.table-of-contents li a {
-  display: block;
-  background-color: #35e888;
-  opacity: 0.9;
-  color: rgba(0, 0, 0, 0.9);
-  text-decoration: none;
-  text-align: center;
-  padding: 10px;
-  border-radius: 5px;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
-}
-
-.table-of-contents li a:hover {
-  background-color: #4bf0a5;
-  opacity: 1.5;
-}
-/** 06.08.2023 lisa l천pp*/
-
 /** 03.10.2023 lisa */
 .hide-content {
   display: none;
@@ -1090,15 +853,95 @@ section .container {
   border: 2px solid #18d26e;
 }
 
+.resume .media {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center align items horizontally */
+  align-items: center; /* Center align items vertically */
+  margin-top: 40px; /* Add spacing between the course description and media items */
+  margin-bottom: 20px;
+}
+
+/* Style for each image */
+.resume .responsive {
+  padding: 6px;
+  width: calc(33.333% - 12px); /* Distribute images evenly with some spacing */
+  box-sizing: border-box;
+}
+
+.resume .gallery {
+  border: none;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  max-width: 600px; /* Set a maximum width */
+  margin-top: 30px;
+  margin-bottom: 20px; /* Add margin between gallery items */
+  overflow: hidden; /* Prevent overflowing content */
+  position: relative; /* Position relative for absolute positioning of description */
+}
+
+.resume .gallery:hover {
+  border: 2px solid #4bf0a5;
+}
+
+.resume .gallery img {
+  opacity: 0.8;
+  display: block;
+  width: 100%;
+  max-height: 260px; /* Set a maximum height for the images */
+  object-fit: cover; /* Maintain aspect ratio while filling the container */
+  cursor: pointer;
+  height: auto;
+  transition: transform 0.5s ease-in-out;
+}
+
+.resume .desc {
+  bottom: 0; /* Align description to the bottom of the container */
+  left: 0; /* Align description to the left of the container */
+  width: 100%; /* Set width to match container */
+  background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background for better readability */
+  color: #f5f0f0; /* Set text color */
+  padding: 20px; /* Add padding to the description */
+  font-size: 16px; /* Set font size */
+  box-sizing: border-box; /* Include padding in width calculation */
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  height: 100%; /* Make the description take up the entire height */
+}
+
+.resume .gallery img:hover {
+  opacity: 0.5;
+  transform: scale(1.02);
+}
+
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
+.services {
+  display: flex;
+  justify-content: center;
+}
+
+.services .row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch; /* Ensure all items stretch to the same height */
+}
+
+.services .col-md-6 {
+  position: relative; /* Set position to relative */
+}
+
 .services .icon-box {
-  min-height: 1000px;
   text-align: center;
   background: rgba(204, 204, 204, 0.1);
   padding: 80px 20px;
   transition: all ease-in-out 0.3s;
+  flex: 1; /* This ensures all icon-box divs take up equal space */
+  min-height: 100%; /* Set the minimum height to 100% of the container */
 }
 
 .services .icon-box .icon {
@@ -1149,6 +992,85 @@ section .container {
   margin-bottom: 0;
   text-align: left;
 }
+
+.services .icon-box:hover h4 a {
+  color: #35e888;
+}
+
+.services .icon-box:hover p {
+  color: #fff;
+}
+
+.services .icon-box:hover h4 a {
+  color: #35e888;
+}
+
+.services .icon-box:hover p {
+  color: #fff;
+}
+
+.services .media {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center align items horizontally */
+  align-items: center; /* Center align items vertically */
+  margin-top: 40px; /* Add spacing between the course description and media items */
+  margin-bottom: 20px;
+}
+
+/* Style for each image */
+
+.services .gallery {
+  position: relative;/* Position relative for absolute positioning of description */
+  overflow: hidden;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  max-width: 600px; /* Set a maximum width */
+  margin-top: 40px;
+  margin-bottom: 20px; /* Add margin between gallery items */
+  overflow: hidden; /* Prevent overflowing content */
+}
+
+.services .gallery img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.5s ease-in-out;
+  opacity: 0.8;
+  display: block;
+  width: 100%;
+  max-height: 260px; /* Set a maximum height for the images */
+  object-fit: cover; /* Maintain aspect ratio while filling the container */
+  cursor: pointer;
+  height: auto;
+}
+
+.services .gallery .desc {
+  bottom: 0; /* Align description to the bottom of the container */
+  left: 0; /* Align description to the left of the container */
+  width: 100%; /* Set width to match container */
+  background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background for better readability */
+  color: #f5f0f0; /* Set text color */
+  padding: 20px; /* Add padding to the description */
+  font-size: 16px; /* Set font size */
+  box-sizing: border-box; /* Include padding in width calculation */
+  text-align: left;
+  pointer-events: none; /* Prevents desc text from being clickable */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  height: 100%; /* Make the description take up the entire height */
+}
+
+.services .gallery:hover {
+  border: 2px solid #4bf0a5;
+}
+
+.services .gallery img:hover {
+  opacity: 0.5;
+  transform: scale(1.02);
+}
 /*
 .services .icon-box:hover {
   background: #18d26e;
@@ -1167,13 +1089,247 @@ section .container {
   background: #35e888;
 }
 */
-.services .icon-box:hover h4 a {
+
+/*--------------------------------------------------------------
+# Module
+--------------------------------------------------------------*/
+/** 03.07.2023 lisa */
+.module {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border: 2px solid #35e888;
+  padding: 10px;
+}
+.module .module-title {
+  font-weight: bold;
+  font-size: 24px;
+}
+.module .course {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.module .course-title {
+  font-weight: bold;
+  font-size: 18px;
+}
+.module .course-description {
+  margin-bottom: 10px;
+}
+
+/** 03.07.2023 lisa l천pp*/
+
+
+/** 26.07.2023 lisa algus*/
+
+/* Styles for the media container */
+.module .media {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center align items horizontally */
+  align-items: center; /* Center align items vertically */
+  margin-top: 40px; /* Add spacing between the course description and media items */
+  margin-bottom: 20px;
+}
+
+/* Style for each image */
+.module .responsive {
+  padding: 6px;
+  width: calc(33.333% - 12px); /* Distribute images evenly with some spacing */
+  box-sizing: border-box;
+}
+
+.module .gallery {
+  border: none;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  max-width: 600px; /* Set a maximum width */
+  margin-top: 30px;
+  margin-bottom: 20px; /* Add margin between gallery items */
+  overflow: hidden; /* Prevent overflowing content */
+  position: relative; /* Position relative for absolute positioning of description */
+}
+
+.module .gallery:hover {
+  border: 2px solid #4bf0a5;
+}
+
+.module .gallery img {
+  opacity: 0.8;
+  display: block;
+  width: 100%;
+  max-height: 260px; /* Set a maximum height for the images */
+  object-fit: cover; /* Maintain aspect ratio while filling the container */
+  cursor: pointer;
+  height: auto;
+  transition: transform 0.5s ease-in-out;
+}
+
+.module .desc {
+  bottom: 0; /* Align description to the bottom of the container */
+  left: 0; /* Align description to the left of the container */
+  width: 100%; /* Set width to match container */
+  background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background for better readability */
+  color: #f5f0f0; /* Set text color */
+  padding: 20px; /* Add padding to the description */
+  font-size: 16px; /* Set font size */
+  box-sizing: border-box; /* Include padding in width calculation */
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  height: 100%; /* Make the description take up the entire height */
+}
+
+.module .gallery img:hover {
+  opacity: 0.5;
+  transform: scale(1.02);
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  div.responsive {
+    width: calc(50% - 12px); /* Adjust width for smaller screens */
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media only screen and (max-width: 900px) {
+  .responsive {
+    max-width: calc(49.999% - 12px);
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    max-width: calc(100% - 12px);
+    margin: 6px auto; /* Center the image and text within the available space */
+  }
+}
+
+
+/* Add a lightbox when clicked on the image */
+.lightbox {
+  display: none; /* Hide the lightbox by default */
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex; /* Use flexbox for centering */
+  align-items: center;
+  justify-content: center;
+}
+
+.lightbox-content {
+  display: block;
+  margin-top: 80px;
+  max-width: 100%; /* Adjust the width as needed */
+  max-height: 100vh; /* Limit the height to 80% of the viewport height */
+  overflow: auto; /* Enable scrolling for larger images */
+  border-radius: 10px; /* Optionally, add rounded corners to the content */
+  position: relative; /* Position the content */
+  text-align: center; /* Center the content horizontally */
+}
+
+.lightbox img {
+  max-width: 80%; /* Make sure the image doesn't exceed the content width */
+  max-height: none; 
+  display: block; /* Remove any default image spacing */
+  margin: auto; /* Center the image within the content */
+}
+/** 26.07.2023 lisa lõpp*/
+
+/** 09.11.2023 lisa algus*/
+/* Styles for the media container*/
+div.media-internship {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* Style for the accordion button */
+button.accordion {
+  display: block;
+  background-color: rgba(27, 27, 27, 0.707);
+  opacity: 0.9;
+  color: #18d26e;
+  text-decoration: none;
+  text-align: center;
+  padding: 0px 20px;
+  width: 100%;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  border: none; 
+}
+
+button.accordion:hover {
+  background-color: rgba(27, 27, 27, 0.707);
+  opacity: 1.5;
   color: #35e888;
 }
 
-.services .icon-box:hover p {
-  color: #fff;
+
+/** 09.11.2023 lisa lõpp*/
+
+/** 06.08.2023 lisa algus*/
+/* Style for the table of contents container */
+.table-of-contents-container {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 15px;
 }
+
+/* Style for the table of contents */
+.table-of-contents {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three equal-width columns */
+  gap: 10px;
+  width: 90%; /* Adjust this width as needed */
+  margin: 0 auto; /* Center the table of contents within the container */
+}
+
+.table-of-contents li { 
+  margin-bottom: 5px;
+}
+
+.table-of-contents li a {
+  display: block;
+  background-color: #35e888;
+  opacity: 0.9;
+  color: rgba(0, 0, 0, 0.9);
+  text-decoration: none;
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.table-of-contents li a:hover {
+  background-color: #4bf0a5;
+  opacity: 1.5;
+}
+/** 06.08.2023 lisa l천pp*/
 
 /*--------------------------------------------------------------
 # Portfolio
