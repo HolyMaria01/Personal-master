@@ -1301,6 +1301,13 @@ button.accordion:hover {
   margin: 0 auto; /* Center the table of contents within the container */
 }
 
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+  .table-of-contents {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adjust min and max width for smaller screens */
+  }
+}
+
 .table-of-contents li { 
   margin-bottom: 5px;
 }
