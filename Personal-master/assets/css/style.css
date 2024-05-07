@@ -899,7 +899,7 @@ section .container {
   bottom: 0; /* Align description to the bottom of the container */
   left: 0; /* Align description to the left of the container */
   width: 100%; /* Set width to match container */
-  background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background for better readability */
+  background-color: transparent; /* Semi-transparent background for better readability */
   color: #f5f0f0; /* Set text color */
   padding: 20px; /* Add padding to the description */
   font-size: 16px; /* Set font size */
@@ -1049,7 +1049,7 @@ section .container {
   bottom: 0; /* Align description to the bottom of the container */
   left: 0; /* Align description to the left of the container */
   width: 100%; /* Set width to match container */
-  background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background for better readability */
+  background-color: transparent; /* Semi-transparent background for better readability */
   color: #f5f0f0; /* Set text color */
   padding: 20px; /* Add padding to the description */
   font-size: 16px; /* Set font size */
@@ -1116,7 +1116,7 @@ section .container {
   margin-bottom: 10px;
 }
 
-/** 03.07.2023 lisa l천pp*/
+/** 03.07.2023 lisa lõpp*/
 
 
 /** 26.07.2023 lisa algus*/
@@ -1127,26 +1127,23 @@ section .container {
   flex-wrap: wrap;
   justify-content: center; /* Center align items horizontally */
   align-items: center; /* Center align items vertically */
-  margin-top: 40px; /* Add spacing between the course description and media items */
-  margin-bottom: 20px;
 }
 
-/* Style for each image */
 .module .responsive {
-  padding: 6px;
-  width: calc(33.333% - 12px); /* Distribute images evenly with some spacing */
-  box-sizing: border-box;
+  flex: 0 0 calc(33.33% - 12px); /* Adjust width for smaller screens */
+  margin: 6px; /* Add margin */
 }
 
 .module .gallery {
+  position: relative; /* Position relative for absolute positioning of description */
   border: none;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 16px;
-  max-width: 600px; /* Set a maximum width */
-  margin-top: 30px;
+  max-width: 400px; /* Set a maximum width */
+  min-height: 360px;
+  margin-top: 10px;
   margin-bottom: 20px; /* Add margin between gallery items */
   overflow: hidden; /* Prevent overflowing content */
-  position: relative; /* Position relative for absolute positioning of description */
 }
 
 .module .gallery:hover {
@@ -1157,18 +1154,16 @@ section .container {
   opacity: 0.8;
   display: block;
   width: 100%;
-  max-height: 260px; /* Set a maximum height for the images */
+  height: 200px;
   object-fit: cover; /* Maintain aspect ratio while filling the container */
   cursor: pointer;
-  height: auto;
   transition: transform 0.5s ease-in-out;
 }
 
 .module .desc {
-  bottom: 0; /* Align description to the bottom of the container */
-  left: 0; /* Align description to the left of the container */
   width: 100%; /* Set width to match container */
-  background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background for better readability */
+  height: 100%;
+  background-color: transparent; /* Semi-transparent background for better readability */
   color: #f5f0f0; /* Set text color */
   padding: 20px; /* Add padding to the description */
   font-size: 16px; /* Set font size */
@@ -1178,7 +1173,6 @@ section .container {
   flex-direction: column;
   justify-content: center;
   align-items: left;
-  height: 100%; /* Make the description take up the entire height */
 }
 
 .module .gallery img:hover {
@@ -1215,7 +1209,6 @@ section .container {
     margin: 6px auto; /* Center the image and text within the available space */
   }
 }
-
 
 /* Add a lightbox when clicked on the image */
 .lightbox {

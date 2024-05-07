@@ -236,6 +236,7 @@ swiperInstances.forEach(function(swiperInstance) {
 
 
 
+
 // Get all the icon-box elements
 const iconBoxes = document.querySelectorAll('.services .icon-box');
 
@@ -254,6 +255,11 @@ iconBoxes.forEach(iconBox => {
 iconBoxes.forEach(iconBox => {
     iconBox.style.minHeight = tallestHeight + 'px';
 });
+
+
+
+
+
 
 
 
