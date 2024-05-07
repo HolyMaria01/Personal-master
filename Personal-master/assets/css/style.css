@@ -1095,25 +1095,30 @@ section .container {
 --------------------------------------------------------------*/
 /** 03.07.2023 lisa */
 .module {
-  margin-top: 10px;
+  margin-top: 20px;
   margin-bottom: 20px;
   border: 2px solid #35e888;
-  padding: 10px;
+  padding: 40px;
 }
 .module .module-title {
   font-weight: bold;
   font-size: 24px;
+  margin-bottom: 10px;
 }
 .module .course {
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 40px;
 }
 .module .course-title {
   font-weight: bold;
   font-size: 18px;
+  margin-top: 40px;
 }
 .module .course-description {
-  margin-bottom: 10px;
+  margin-bottom: 4px;
+}
+
+.module p {
+  width: 80%;
 }
 
 /** 03.07.2023 lisa lõpp*/
@@ -1127,6 +1132,7 @@ section .container {
   flex-wrap: wrap;
   justify-content: center; /* Center align items horizontally */
   align-items: center; /* Center align items vertically */
+  margin-bottom: 60px;
 }
 
 .module .responsive {
@@ -1269,13 +1275,15 @@ button.accordion {
   border-radius: 5px;
   font-weight: bold;
   cursor: pointer;
-  border: none; 
+  border: none;
+  margin-top: 20px; 
 }
 
 button.accordion:hover {
   background-color: rgba(27, 27, 27, 0.707);
   opacity: 1.5;
   color: #35e888;
+  margin-top: 20px;
 }
 
 
