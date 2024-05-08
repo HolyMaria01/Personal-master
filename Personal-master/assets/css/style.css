@@ -39,7 +39,7 @@ button#read-more-button:hover {
   background-color: #4bf0a5;
   opacity: 1.5;
 }
-
+/** 03.10.2023 lisa lõpp*/
 
 body {
   font-family: "Open Sans", sans-serif;
@@ -1359,16 +1359,6 @@ button.accordion:hover {
 /* Customize scrollbar thumb */
 ::-webkit-scrollbar-thumb {
   background: transparent; /* Set color of the scrollbar thumb */
-}
-
-.mgp-error-message {
-  display: none;
-  background-color: #f44336;
-  color: #fff;
-  padding: 10px;
-  margin-top: 10px;
-  text-align: center;
-  border-radius: 5px;
 }
 
 

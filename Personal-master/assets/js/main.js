@@ -257,28 +257,6 @@ iconBoxes.forEach(iconBox => {
 });
 
 
-$(document).ready(function() {
-  // Initialize Magnific Popup for images
-  $('.responsive .gallery a[href$=".jpg"], .responsive .gallery a[href$=".png"]').magnificPopup({
-      type: 'image',
-      // Other Magnific Popup options for images
-  });
-
-  // Handle clicks on gallery images to open PDF files
-  $('.responsive .gallery a[href$=".pdf"]').magnificPopup({
-      type: 'image',
-      callbacks: {
-          imageLoadError: function() {
-              // Display the custom error message
-              $('.mgp-error-message').show();
-          }
-      }
-  });
-});
-
-
-
-
 
 
 
