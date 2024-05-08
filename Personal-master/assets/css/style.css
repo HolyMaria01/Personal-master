@@ -1216,9 +1216,9 @@ section .container {
   }
 }
 
-/* Add a lightbox when clicked on the image */
+/* Add a lightbox when clicked on the image 
 .lightbox {
-  display: none; /* Hide the lightbox by default */
+  display: none; /* Hide the lightbox by default 
   position: fixed;
   z-index: 999;
   top: 0;
@@ -1227,7 +1227,7 @@ section .container {
   height: 100%;
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.9);
-  display: flex; /* Use flexbox for centering */
+  display: flex; /* Use flexbox for centering 
   align-items: center;
   justify-content: center;
 }
@@ -1235,20 +1235,21 @@ section .container {
 .lightbox-content {
   display: block;
   margin-top: 80px;
-  max-width: 100%; /* Adjust the width as needed */
-  max-height: 100vh; /* Limit the height to 80% of the viewport height */
-  overflow: auto; /* Enable scrolling for larger images */
-  border-radius: 10px; /* Optionally, add rounded corners to the content */
-  position: relative; /* Position the content */
-  text-align: center; /* Center the content horizontally */
+  max-width: 100%; /* Adjust the width as needed 
+  max-height: 100vh; /* Limit the height to 80% of the viewport height 
+  overflow: auto; /* Enable scrolling for larger images 
+  border-radius: 10px; /* Optionally, add rounded corners to the content 
+  position: relative; /* Position the content 
+  text-align: center; /* Center the content horizontally 
 }
 
 .lightbox img {
-  max-width: 80%; /* Make sure the image doesn't exceed the content width */
+  max-width: 80%; /* Make sure the image doesn't exceed the content width 
   max-height: none; 
-  display: block; /* Remove any default image spacing */
-  margin: auto; /* Center the image within the content */
+  display: block; /* Remove any default image spacing 
+  margin: auto; /* Center the image within the content 
 }
+*/
 /** 26.07.2023 lisa lõpp*/
 
 /** 09.11.2023 lisa algus*/
@@ -1338,6 +1339,40 @@ button.accordion:hover {
   opacity: 1.5;
 }
 /** 06.08.2023 lisa l천pp*/
+
+
+/** 08.05.2024 lisa algus*/
+.custom-color svg {
+  fill: #4bf0a5; /* Change arrow color here */
+}
+
+/* Customize scrollbar */
+::-webkit-scrollbar {
+  width: 6px; /* Set width of the scrollbar */
+}
+
+/* Customize scrollbar track */
+::-webkit-scrollbar-track {
+  background: transparent; /* Set background color of the scrollbar track */
+}
+
+/* Customize scrollbar thumb */
+::-webkit-scrollbar-thumb {
+  background: transparent; /* Set color of the scrollbar thumb */
+}
+
+.mgp-error-message {
+  display: none;
+  background-color: #f44336;
+  color: #fff;
+  padding: 10px;
+  margin-top: 10px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+
+/** 08.05.2024 lisa l천pp*/
 
 /*--------------------------------------------------------------
 # Portfolio

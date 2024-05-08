@@ -27,6 +27,13 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
+   <!-- Include Magnific Popup CSS -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+
+   <!-- Include jQuery (required by Magnific Popup) -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!-- Include Magnific Popup JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
 
   <!-- =======================================================
   * Template Name: Personal - v4.10.0
@@ -766,7 +773,7 @@
       <div class="media">
         <div class="responsive">
           <div class="gallery">
-            <a target="_blank" href="assets/img/veebikujundus/tanukirjad.png">
+            <a target="_blank" href="assets/img/veebikujundus/tanukirjad.png" class="gallery-item">
               <img src="assets/img/veebikujundus/tanukirjad.png" alt="tänukirjad">
             </a>
             <div class="desc">Tänukirjad. Kasutatud Adobe Illustatorit. Üks esimesi loominguid õppeaasta esimesel poolel. Kuigi esteetiliselt ilus, on värvide kontrast väike ning tekst kehvasti loetav.</div>
@@ -774,7 +781,7 @@
         </div>
         <!-- <div class="responsive">
           <div class="gallery">
-            <a href="assets/img/veebikujundus/aasta_tegija-_2023.gif" onclick="openLightbox('assets/img/veebikujundus/aasta_tegija-_2023.gif'); return false;">
+            <a target="_blank" href="assets/img/veebikujundus/aasta_tegija-_2023.gif" onclick="openLightbox('assets/img/veebikujundus/aasta_tegija-_2023.gif'); return false;">
               <img src="assets/img/veebikujundus/aasta_tegija-_2023.gif" alt="Aasta Tegija 2023 prototüüp" >
             </a>
             <div class="desc">Aasta tegjia 2023 prototüüp.</div>
@@ -968,7 +975,7 @@
         <div class="media">
           <div class="responsive">
             <div class="gallery">
-              <a href="assets/img/veebiarendus ja haldus/Munadega ettevõtted 2023.png" onclick="openLightbox('assets/img/veebiarendus ja haldus/Munadega ettevõtted 2023.png'); return false;">
+              <a target="_blank" href="assets/img/veebiarendus ja haldus/Munadega ettevõtted 2023.png">
                <img src="assets/img/veebiarendus ja haldus/Munadega ettevõtted 2023.png" alt="2023 Kuldmuna võitjate esitlus" >
               </a>
               <div class="desc">2023 Kuldmuna võitjaid analüüsiva esitlusega, mille tegemisel kasutati Canva keskkonda, saab tutvuda <a target="_blank" href="files/Munadega ettevõtted 2023.pdf">siin.</a></div>
@@ -976,13 +983,13 @@
           </div>
           <div class="responsive">
             <div class="gallery">
-              <a href="assets/img/veebiarendus ja haldus/Üle-Ilma projekt.png" onclick="openLightbox('assets/img/veebiarendus ja haldus/Üle-Ilma projekt.png'); return false;">
+              <a target="_blank" href="assets/img/veebiarendus ja haldus/Üle-Ilma projekt.png">
                <img src="assets/img/veebiarendus ja haldus/Üle-Ilma projekt.png" alt="Üle-Ilma kliendiprojekti esitlus" >
               </a>
               <div class="desc">Üle-Ilma kliendiprojekti esitus, mille tegemisel kasutati Canva keskkonda, saab tutvuda <a target="_blank" href="files/Üle-Ilma projekt.pdf">siin.</a></div>
             </div>
           </div>
-          <div class="clearfix"></div>
+
         </div>
       </div>
 
@@ -1010,7 +1017,7 @@
     <div class="media">
       <div class="responsive">
         <div class="gallery">
-          <a href="assets/img/veebiarendus ja haldus/AB-Testing.png" onclick="openLightbox('assets/img/veebiarendus ja haldus/AB-Testing.png'); return false;">
+          <a target="_blank" href="assets/img/veebiarendus ja haldus/AB-Testing.png">
            <img src="assets/img/veebiarendus ja haldus/AB-Testing.png" alt="A/B testimise esitamise fail" >
           </a>
           <div class="desc">A/B testimise esitamise failiga, mille tegemisel kasutati Google'i dokumendid keskkonda, saab tutvuda <a target="_blank" href="files/a_b testimine.pdf">siin.</a></div>
@@ -1018,13 +1025,13 @@
       </div>
      <div class="responsive">
        <div class="gallery">
-         <a href="assets/img/veebiarendus ja haldus/Tarkvaraarenduse mudelid.png" onclick="openLightbox('assets/img/veebiarendus ja haldus/Tarkvaraarenduse mudelid.png'); return false;">
+         <a target="_blank" href="assets/img/veebiarendus ja haldus/Tarkvaraarenduse mudelid.png">
           <img src="assets/img/veebiarendus ja haldus/Tarkvaraarenduse mudelid.png" alt="Tarkvaraarenduse mudelid esitlus" >
          </a>
          <div class="desc">Tarkvaraarenduse mudelid esitlusega, mille tegemisel kasutati Google'i esitlused keskkonda, saab tutvuda <a target="_blank" href="files/Tarkvaraarenduse mudelid.pdf">siin.</a></div>
        </div>
       </div>
-     <div class="clearfix"></div>
+
     </div>
   </div>
 
@@ -1092,12 +1099,13 @@
       <!-- <div id="Meeskonnatöö alused ja projektijuhtimine" class="course"></div> -->
         <h3 class="course-title">IT korraldus</h3>
         <p class="course-description">Saime ülevaate organistatsioonide ning IT struktuuridest. Täpsemalt õppsisime mõistam organisatsiooni eesmärke, selle rolle toote-teenuse turundamisel ning veebilehtede olulisust selles kontekstis. Veel ka käisime õppekäigul BitWebis.</p>
+        
         <h3 class="course-title">Meeskonnatöö alused ja projektijuhtimine</h3>
         <p class="course-description">Kursuse raames viis terve KD22 kursus läbi projekti, milleks osutus Voco õpetajatele suunatud loeng koos töötoaga. Minu ülesanne oli seal pausi jaoks kohvi lauale küpsetada ning laud ära katta.</p>
         <div class="media">
           <div class="responsive">
             <div class="gallery">
-              <a href="assets/img/projektijuhtimise alused/bitweb_background.jpg" onclick="openLightbox('assets/img/projektijuhtimise alused/bitweb_background.jpg'); return false;">
+              <a target="_blank" href="assets/img/projektijuhtimise alused/bitweb_background.jpg">
                <img src="assets/img/projektijuhtimise alused/bitweb_background.jpg" alt="BitWeb õppekäigu raport" >
               </a>
               <div class="desc">BitWeb õppekäigu rapordiga, mille tegemisel kasutati Google'i dokumendid keskkonda, saab tutvuda <a target="_blank" href="files/BitWeb raport.pdf">siin.</a></div>
@@ -1105,13 +1113,13 @@
           </div>
           <div class="responsive">
             <div class="gallery">
-              <a href="assets/img/projektijuhtimise alused/UX loeng - Workshop.jpeg" onclick="openLightbox('assets/img/projektijuhtimise alused/UX loeng - Workshop.jpeg'); return false;">
+              <a target="_blank" href="assets/img/projektijuhtimise alused/UX loeng - Workshop.jpeg">
                <img src="assets/img/projektijuhtimise alused/UX loeng - Workshop.jpeg" alt="Pilt korraldatud UX loengust" >
               </a>
               <div class="desc">Pilt KD22 õpilastets, kes viisid läbi "UX loeng - Workshop" ürituse.</div>
             </div>
           </div>
-          <div class="clearfix"></div>
+
         </div>
       </div>
   
@@ -1121,7 +1129,7 @@
         <div class="media">
           <div class="responsive">
             <div class="gallery">
-              <a href="assets/img/projektijuhtimise alused/rohemeel_plaan.png" onclick="openLightbox('assets/img/projektijuhtimise alused/rohemeel_plaan.png'); return false;">
+              <a target="_blank" href="assets/img/projektijuhtimise alused/rohemeel_plaan.png">
                <img src="assets/img/projektijuhtimise alused/rohemeel_plaan.png" alt="Rohemeel plaan" >
               </a>
               <div class="desc">Kooli häkatonil tehtud tööleht tulevase rakenduse <strong>Rohemeel</strong> arendamisel.</div>
@@ -1129,7 +1137,7 @@
           </div>
           <div class="responsive">
             <div class="gallery">
-              <a href="assets/img/projektijuhtimise alused/häkaton_diplom.png" onclick="openLightbox('assets/img/projektijuhtimise alused/häkaton_diplom.png'); return false;">
+              <a target="_blank" href="assets/img/projektijuhtimise alused/häkaton_diplom.png">
                <img src="assets/img/projektijuhtimise alused/häkaton_diplom.png" alt="Häkatoni diplom" >
               </a>
               <div class="desc">Kooli häkatoni võidu diplom.</div>
@@ -1137,7 +1145,7 @@
           </div>
           <!-- <div class="responsive">
             <div class="gallery">
-              <a href="assets/img/projektijuhtimise alused/rohemeel_prototüüp.PNG" onclick="openLightbox('assets/img/projektijuhtimise alused/rohemeel_prototüüp.PNG'); return false;">
+              <a target="_blank" href="assets/img/projektijuhtimise alused/rohemeel_prototüüp.PNG" onclick="openLightbox('assets/img/projektijuhtimise alused/rohemeel_prototüüp.PNG'); return false;">
                <img src="assets/img/projektijuhtimise alused/rohemeel_prototüüp.PNG" alt="rohemeel prototüüp" >
               </a> 
               <div class="desc">Kooli häkatonil valminud prototüüp <strong>Rohemeel</strong> rakendusest.</div>
@@ -1145,13 +1153,13 @@
           </div> -->
           <div class="responsive">
             <div class="gallery">
-              <a href="assets/img/projektijuhtimise alused/Minu elu projektid.png" onclick="openLightbox('assets/img/projektijuhtimise alused/Minu elu projektid.png'); return false;">
+              <a target="_blank" href="assets/img/projektijuhtimise alused/Minu elu projektid.png">
                <img src="assets/img/projektijuhtimise alused/Minu elu projektid.png" alt="Minu elu projektid ülevaade" >
               </a>
               <div class="desc">Mõttekaart minu elu suurematets projektidest 2023 aasta alguse seisuga.</div>
             </div>
           </div>
-          <div class="clearfix"></div>
+
         </div>
       </div>
       </div>
@@ -1197,13 +1205,13 @@
         <div class="media">
           <div class="responsive">
             <div class="gallery">
-              <a href="assets/img/programmeerimise alused/Šokolaadi-tahvlid ja statistika.png" onclick="openLightbox('assets/img/programmeerimise alused/Šokolaadi-tahvlid ja statistika.png'); return false;">
+              <a target="_blank" href="assets/img/programmeerimise alused/Šokolaadi-tahvlid ja statistika.png">
                <img src="assets/img/programmeerimise alused/Šokolaadi-tahvlid ja statistika.png" alt="Šokolaadi-tahvlid ja statistika esitlus" >
               </a>
               <div class="desc">"Šokolaadi-tahvlid ja statistika" esitlusega, mille tegemisel kasutati Canva keskkonda, saab tutvuda <a target="_blank" href="files/Šokolaadi-tahvlid ja statistika.pdf">siin.</a></div>
             </div>
           </div>
-          <div class="clearfix"></div>
+
         </div>
       </div>
       </div>
@@ -1232,13 +1240,13 @@
         <div class="media">
           <div class="responsive">
             <div class="gallery">
-              <a href="assets/img/kasutajakogemuse analüüs/Väli-lektorid.png" onclick="openLightbox('assets/img/kasutajakogemuse analüüs/Väli-lektorid.png'); return false;">
+              <a target="_blank" href="assets/img/kasutajakogemuse analüüs/Väli-lektorid.png">
                <img src="assets/img/kasutajakogemuse analüüs/Väli-lektorid.png" alt="Külalislekorite tundide dokumentatsioon" >
               </a>
               <div class="desc">Külalislektorite tundides tehtud dokumentatsiooniga, saab tutvuda <a target="_blank" href="files/Välilektorite tunnid.pdf">siin.</a></div>
             </div>
           </div>
-          <div class="clearfix"></div>
+
         </div>
       </div>
 
@@ -1248,7 +1256,7 @@
         <div class="media">
           <div class="responsive">
             <div class="gallery">
-              <a href="assets/img/kasutajakogemuse analüüs/GA4_demo_background.png" onclick="openLightbox('assets/img/kasutajakogemuse analüüs/GA4_demo_background.png'); return false;">
+              <a target="_blank" href="assets/img/kasutajakogemuse analüüs/GA4_demo_background.png">
                <img src="assets/img/kasutajakogemuse analüüs/GA4_demo_background.png" alt="GA4 Demo ülesanne" >
               </a>
               <div class="desc">GA4 Demo ülesandega, mille tegemisel kasutati Google'i dokumendid ja Google Analytics keskkondasid, saab tutvuda <a target="_blank" href="files/GA4 Demo ülesanne_20.03.22023.pdf">siin.</a></div>
@@ -1256,13 +1264,13 @@
           </div>
           <div class="responsive">
             <div class="gallery">
-              <a href="assets/img/kasutajakogemuse analüüs/GA_paigaldus_background.png" onclick="openLightbox('assets/img/kasutajakogemuse analüüs/GA_paigaldus_background.png'); return false;">
+              <a target="_blank" href="assets/img/kasutajakogemuse analüüs/GA_paigaldus_background.png">
                <img src="assets/img/kasutajakogemuse analüüs/GA_paigaldus_background.png" alt="Google Analytics paigaldus Wordpressi ülesanne" >
               </a>
               <div class="desc">Google Analytics paigaldus Wordpressi ülesandega, mille tegemisel kasutati Google'i dokumendid, Wordpress ja Google Analytics keskkondasid, saab tutvuda <a target="_blank" href="files/Google Analytics_08.03.2023.pdf">siin.</a></div>
             </div>
           </div>
-          <div class="clearfix"></div>
+
         </div>
       </div>
   
@@ -1317,13 +1325,13 @@
         <div class="media">
           <div class="responsive">
             <div class="gallery">
-              <a href="assets/img/karjääriplaneerimine ja ettevõtlus/Eesti maksusüsteem.png" onclick="openLightbox('assets/img/karjääriplaneerimine ja ettevõtlus/Eesti maksusüsteem.png'); return false;">
+              <a target="_blank" href="assets/img/karjääriplaneerimine ja ettevõtlus/Eesti maksusüsteem.png">
                <img src="assets/img/karjääriplaneerimine ja ettevõtlus/Eesti maksusüsteem.png" alt="Eesti maksusüsteem mõistekaart" >
               </a>
               <div class="desc">Mõistekaart Eesti maskusüsteemist.</div>
             </div>
           </div>
-          <div class="clearfix"></div>
+
         </div>
       </div>
       </div>
@@ -1345,7 +1353,7 @@
         <div class="media">
           <div class="responsive">
             <div class="gallery">
-              <a href="assets/img/graafilise disaini alused/web_basics.png" onclick="openLightbox('assets/img/graafilise disaini alused/web_basics.png'); return false;">
+              <a target="_blank" href="assets/img/graafilise disaini alused/web_basics.png">
                <img src="assets/img/graafilise disaini alused/web_basics.png" alt="UX/UI web basics ülevaade" >
               </a>
               <div class="desc"><i>Web basics</i> graafilise disaini meelespea. Kasutaud Canva keskkonda.</div>
@@ -1353,7 +1361,7 @@
           </div>
           <!-- <div class="responsive">
             <div class="gallery">
-              <a href="assets/img/graafilise disaini alused/presentation_home_spa.jpg" onclick="openLightbox('assets/img/graafilise disaini alused/presentation_home_spa.jpg'); return false;">
+              <a target="_blank" href="assets/img/graafilise disaini alused/presentation_home_spa.jpg" onclick="openLightbox('assets/img/graafilise disaini alused/presentation_home_spa.jpg'); return false;">
                <img src="assets/img/graafilise disaini alused/presentation_home_spa.jpg" alt="Home Spa kliendiprojekt" >
               </a>
               <div class="desc">Home Spa kliendiprojekt. Kasutatud Adobe Photoshop ja Illustator keskkondasid ning graafikalauda.</div>
@@ -1361,7 +1369,7 @@
           </div> -->
           <div class="responsive">
             <div class="gallery">
-              <a href="assets/img/graafilise disaini alused/mobile_basics.png" onclick="openLightbox('assets/img/graafilise disaini alused/mobile_basics.png'); return false;">
+              <a target="_blank" href="assets/img/graafilise disaini alused/mobile_basics.png">
                <img src="assets/img/graafilise disaini alused/mobile_basics.png" alt="UX/UI mobile basics ülevaade" >
               </a>
               <div class="desc"><i>Mobile basics</i> graafilise disaini meelespea. Kasutaud Canva keskkonda.</div>
@@ -1369,7 +1377,7 @@
           </div>
           <div class="responsive">
             <div class="gallery">
-              <a href="assets/img/graafilise disaini alused/fixed_1.jpg" onclick="openLightbox('assets/img/graafilise disaini alused/fixed_1.jpg'); return false;">
+              <a target="_blank" href="assets/img/graafilise disaini alused/fixed_1.jpg">
                <img src="assets/img/graafilise disaini alused/fixed_1.jpg" alt="Päikseline töödeldud pilt Annelinnas" >
               </a>
               <div class="desc">“Päikest taga ajades”. Kasutatud Motorola Edge Pro 20, töödeldud Adobe Photohopis.</div>
@@ -1377,7 +1385,7 @@
           </div>
           <div class="responsive">
             <div class="gallery">
-              <a href="assets/img/graafilise disaini alused/fixed_2.jpg" onclick="openLightbox('assets/img/graafilise disaini alused/fixed_2.jpg'); return false;">
+              <a target="_blank" href="assets/img/graafilise disaini alused/fixed_2.jpg">
                <img src="assets/img/graafilise disaini alused/fixed_2.jpg" alt="Päikseline töödeldud pilt Vanalinnas I" >
               </a>
               <div class="desc">“Päikest taga ajades”. Kasutatud Motorola Edge Pro 20, töödeldud Adobe Photohopis.</div>
@@ -1385,13 +1393,13 @@
           </div>
           <div class="responsive">
             <div class="gallery">
-              <a href="assets/img/graafilise disaini alused/fixed_3.jpg" onclick="openLightbox('assets/img/graafilise disaini alused/fixed_3.jpg'); return false;">
+              <a target="_blank" href="assets/img/graafilise disaini alused/fixed_3.jpg">
                 <img src="assets/img/graafilise disaini alused/fixed_3.jpg" alt="Päikseline töödeldud pilt Vanalinnas II" >
               </a>
               <div class="desc">“Päikest taga ajades”. Kasutatud Motorola Edge Pro 20, töödeldud Adobe Photohopis</div>
             </div>
           </div>
-          <div class="clearfix"></div>
+
         </div>
       </div>
       </div>
@@ -1413,13 +1421,13 @@
         <div class="media">
           <div class="responsive">
             <div class="gallery">
-              <a href="assets/img/arvutite riistvara ja võrgud/arvuti_hardware_background.png" onclick="openLightbox('assets/img/arvutite riistvara ja võrgud/arvuti_hardware_background.png'); return false;">
+              <a target="_blank" href="assets/img/arvutite riistvara ja võrgud/arvuti_hardware_background.png" onclick="openLightbox('assets/img/arvutite riistvara ja võrgud/arvuti_hardware_background.png'); return false;">
                <img src="assets/img/arvutite riistvara ja võrgud/arvuti_hardware_background.png" alt="Lauaarvutite komplekteerimise ülesanne" >
               </a>
               <div class="desc">Lauaarvutite komplekteerimise ülesandega, mille tegemisel kasutati Google'i dokumendid keskkonda ja Arvutitark veebilehte, saab tutvuda <a target="_blank" href="files/LAB1_klientide_soovid__lauaarvutitel_Maarja-Liis_Kaldvee_KD22.pdf">siin.</a></div>
             </div>
           </div>
-          <div class="clearfix"></div>
+
         </div>
       </div>
 
@@ -1429,7 +1437,7 @@
         <div class="media">
           <div class="responsive">
             <div class="gallery">
-              <a href="assets/img/arvutite riistvara ja võrgud/windows_background.jpeg" onclick="openLightbox('assets/img/arvutite riistvara ja võrgud/windows_background.jpeg'); return false;">
+              <a target="_blank" href="assets/img/arvutite riistvara ja võrgud/windows_background.jpeg">
                <img src="assets/img/arvutite riistvara ja võrgud/windows_background.jpeg" alt="Linux virtuaalne paigaldus ja ülesanded" >
               </a>
               <div class="desc">Windows virtuaalne paigalduse ja ülesandega, mille tegemisel kasutati Google'i dokumendid ja virtuaalmasinate loomise keskkondasid, saab tutvuda <a target="_blank" href="files/OPsüsteem_Windows_Maarja-Liis_Kaldvee_KD22.pdf">siin.</a></div>
@@ -1437,7 +1445,7 @@
           </div>
           <div class="responsive">
             <div class="gallery">
-              <a href="assets/img/arvutite riistvara ja võrgud/macOS_background.jpg" onclick="openLightbox('assets/img/arvutite riistvara ja võrgud/macOS_background.jpg'); return false;">
+              <a target="_blank" href="assets/img/arvutite riistvara ja võrgud/macOS_background.jpg">
                <img src="assets/img/arvutite riistvara ja võrgud/macOS_background.jpg" alt="Mac OS virtuaalne paigaldus ja ülesanded" >
               </a>
               <div class="desc">Mac OS virtuaalne paigalduse ja ülesandega, mille tegemisel kasutati Google'i dokumendid ja virtuaalmasinate loomise keskkondasid, saab tutvuda <a target="_blank" href="files/OPsüsteem_Mac_Maarja-Liis_Kaldvee_KD22.pdf">siin.</a></div>
@@ -1445,13 +1453,13 @@
           </div>
           <div class="responsive">
             <div class="gallery">
-              <a href="assets/img/arvutite riistvara ja võrgud/linux_background.png" onclick="openLightbox('assets/img/arvutite riistvara ja võrgud/linux_background.png'); return false;">
+              <a target="_blank" href="assets/img/arvutite riistvara ja võrgud/linux_background.png">
                <img src="assets/img/arvutite riistvara ja võrgud/linux_background.png" alt="Linux virtuaalne paigaldus ja ülesanded" >
               </a>
               <div class="desc">Linux virtuaalne paigalduse ja ülesandega, mille tegemisel kasutati Google'i dokumendid ja virtuaalmasinate loomise keskkondasid, saab tutvuda <a target="_blank" href="files/OpSüsteemid_Ubuntu_Maarja-Liis_Kaldvee_KD22.pdf">siin.</a></div>
             </div>
           </div>
-          <div class="clearfix"></div>
+
         </div>
       </div>
 
@@ -1475,7 +1483,7 @@
         <div class="media">
           <div class="responsive">
             <div class="gallery">
-              <a href="assets/img/arvutite riistvara ja võrgud/lab1_background.png" onclick="openLightbox('assets/img/arvutite riistvara ja võrgud/lab1_background.png'); return false;">
+              <a target="_blank" href="assets/img/arvutite riistvara ja võrgud/lab1_background.png">
                <img src="assets/img/arvutite riistvara ja võrgud/lab1_background.png" alt="Võrguparameetrite jagamine DHCP-teenuse abil" >
               </a>
               <div class="desc">Võrguparameetrite jagamise DHCP-teenuse abil ülesandega, mille tegemisel kasutati Google'i dokumendid ja Cisco Packet Tracer keskkondasid, saab tutvuda <a target="_blank" href="files/Arvutivõrgud_LAB1_Maarja-Liis_Kaldvee_KD22.pdf">siin.</a></div>
@@ -1483,7 +1491,7 @@
           </div>
           <div class="responsive">
             <div class="gallery">
-              <a href="assets/img/arvutite riistvara ja võrgud/lab4_background.png" onclick="openLightbox('assets/img/arvutite riistvara ja võrgud/lab4_background.png'); return false;">
+              <a target="_blank" href="assets/img/arvutite riistvara ja võrgud/lab4_background.png">
                <img src="assets/img/arvutite riistvara ja võrgud/lab4_background.png" alt="DNS teenuse seadistus" >
               </a>
               <div class="desc">DNS teenuse seadistuse ülesandega, mille tegemisel kasutati Google'i dokumendid ja Cisco Packet Tracer keskkondasid, saab tutvuda <a target="_blank" href="files/Arvutivõrgud_LAB4_Maarja-Liis_Kaldvee_KD22.pdf">siin.</a></div>
@@ -1491,13 +1499,13 @@
           </div>
           <div class="responsive">
             <div class="gallery">
-              <a href="assets/img/arvutite riistvara ja võrgud/lab5_background.png" onclick="openLightbox('assets/img/arvutite riistvara ja võrgud/lab5_background.png'); return false;">
+              <a target="_blank" href="assets/img/arvutite riistvara ja võrgud/lab5_background.png">
                <img src="assets/img/arvutite riistvara ja võrgud/lab5_background.png" alt="Marsruutimine" >
               </a>
               <div class="desc">Marsruutimise ülesandega, mille tegemisel kasutati Google'i dokumendid ja Cisco Packet Tracer keskkondasid, saab tutvuda <a target="_blank" href="files/Arvutivõrgud_LAB5_Maarja-Liis_Kaldvee_KD22_.pdf">siin.</a></div>
             </div>
           </div>
-          <div class="clearfix"></div>
+
         </div>
       </div>
       </div>
@@ -1506,17 +1514,20 @@
     </div>
 <!-- ======= Arvutite riistvara ja võrgud lõpp ======= -->
     
-<!-- Lightbox -->
+<!-- Lightbox
     <div id="lightbox" class="lightbox" onclick="closeLightbox()">
       <span class="lightbox-content">
         <img id="lightbox-image">
       </span>
-    </div><!-- End of Lightbox -->
+    </div> -->
 
    </div>
-  </section><!-- End Portfolio Section -->
+  </section>
+  <!-- End Portfolio Section -->
 
-
+  <div class="mgp-error-message" style="display: none;">
+    Vajutage julgelt, et näha rohkem.
+  </div>
 
   <div class="credits">
     <!-- All the links in the footer should remain intact. -->
@@ -1538,7 +1549,7 @@
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 
-  <!-- Minu lisatud katse 26.07.2023 - Lightbox -->
+  <!-- Minu lisatud katse 26.07.2023 - Lightbox 
   <script>
     // Function to open the lightbox
     function openLightbox(imageUrl) {
@@ -1553,7 +1564,7 @@
       const lightbox = document.getElementById("lightbox");
       lightbox.style.display = "none";
     }
-  </script>
+  </script>-->
   
    <!-- Minu lisatud katse 03.10.2023/13.02.2024 - Loe rohkem nupp -->
    <script>
@@ -1592,6 +1603,30 @@
       });
   });
 </script>
+
+
+<!-- Minu lisatud katse 08.05.2024 - Lightbox upgrade -->
+
+
+<script>
+  $(document).ready(function() {
+    $('.gallery').magnificPopup({
+      delegate: 'a',
+      type: 'image',
+      gallery:{
+        enabled:true
+      },
+      showCloseBtn: false, // Hide the page counter
+      mainClass: 'mfp-with-zoom',
+      // Customize arrow colors
+      arrowMarkup: '<button title="%title%" type="button" class="mfp-arrow mfp-arrow-%dir% custom-color"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M0 0h24v24H0V0z" fill="none"/><path fill="#4bf0a5" d="M8.71 7.71l4.58 4.58-4.58 4.59L10.12 18l6-6-6-6z"/></svg></button>',
+      // Other options if needed
+    });
+  });
+</script>
+
+
+
 
 
 </body>
