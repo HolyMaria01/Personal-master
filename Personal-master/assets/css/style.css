@@ -935,12 +935,15 @@ section .container {
 }
 
 .services .icon-box {
+  position: relative; /* Set position to relative */
   text-align: center;
   background: rgba(204, 204, 204, 0.1);
   padding: 80px 20px;
   transition: all ease-in-out 0.3s;
   flex: 1; /* This ensures all icon-box divs take up equal space */
   min-height: 100%; /* Set the minimum height to 100% of the container */
+  display: flex;
+  flex-direction: column;
 }
 
 .services .icon-box .icon {
@@ -987,8 +990,8 @@ section .container {
 
 .services .icon-box p {
   line-height: 24px;
-  font-size: 14px;
-  margin-bottom: 0;
+  font-size: 16px;
+  margin-bottom: 20px;
   text-align: left;
 }
 
@@ -997,7 +1000,7 @@ section .container {
 }
 
 .services .icon-box:hover p {
-  color: #fff;
+  color: #f5f0f0;
 }
 
 .services .icon-box:hover h4 a {
@@ -1005,61 +1008,48 @@ section .container {
 }
 
 .services .icon-box:hover p {
-  color: #fff;
-}
-
-.services .media {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center; /* Center align items horizontally */
-  align-items: center; /* Center align items vertically */
-  margin-top: 40px; /* Add spacing between the course description and media items */
-  margin-bottom: 20px;
+  color: #f5f0f0;
 }
 
 /* Style for each image */
 
+/* Adjust the positioning of the gallery within the icon box */
+.services .icon-box .gallery {
+  margin-top: auto; /* Add space between icon box content and gallery */
+}
+
+/* Style for each image */
 .services .gallery {
-  position: relative;/* Position relative for absolute positioning of description */
-  overflow: hidden;
   border: 2px solid transparent;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 16px;
-  max-width: 600px; /* Set a maximum width */
-  margin-top: 40px;
-  margin-bottom: 20px; /* Add margin between gallery items */
-  overflow: hidden; /* Prevent overflowing content */
+  overflow: hidden;
+  width: calc(100% - 20px); /* Set a width minus the margin */
+  margin: 0 auto;
+  position: relative;
+  max-height: 400px;
 }
 
 .services .gallery img {
-  width: 100%;
-  height: auto;
-  transition: transform 0.5s ease-in-out;
-  opacity: 0.8;
   display: block;
   width: 100%;
-  max-height: 260px; /* Set a maximum height for the images */
+  height: auto;
+  max-height: 260px;
+  transition: transform 0.5s ease-in-out;
+  opacity: 0.8;
   object-fit: cover; /* Maintain aspect ratio while filling the container */
   cursor: pointer;
-  height: auto;
 }
 
 .services .gallery .desc {
-  bottom: 0; /* Align description to the bottom of the container */
-  left: 0; /* Align description to the left of the container */
-  width: 100%; /* Set width to match container */
-  background-color: transparent; /* Semi-transparent background for better readability */
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: transparent;
   color: #f5f0f0; /* Set text color */
   padding: 20px; /* Add padding to the description */
+  box-sizing: border-box;
   font-size: 16px; /* Set font size */
-  box-sizing: border-box; /* Include padding in width calculation */
-  text-align: left;
-  pointer-events: none; /* Prevents desc text from being clickable */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: left;
-  height: 100%; /* Make the description take up the entire height */
 }
 
 .services .gallery:hover {

@@ -236,25 +236,34 @@ swiperInstances.forEach(function(swiperInstance) {
 
 
 
+// Function to set the height of all icon-boxes to match the tallest one
+function setIconBoxHeight() {
+  // Get all the icon-box elements
+  const iconBoxes = document.querySelectorAll('.services .icon-box');
 
-// Get all the icon-box elements
-const iconBoxes = document.querySelectorAll('.services .icon-box');
+  // Initialize a variable to store the tallest height
+  let tallestHeight = 0;
 
-// Initialize a variable to store the tallest height
-let tallestHeight = 0;
+  // Loop through each icon-box element to find the tallest height
+  iconBoxes.forEach(iconBox => {
+      const iconBoxHeight = iconBox.clientHeight;
+      if (iconBoxHeight > tallestHeight) {
+          tallestHeight = iconBoxHeight;
+      }
+  });
 
-// Loop through each icon-box element to find the tallest height
-iconBoxes.forEach(iconBox => {
-    const iconBoxHeight = iconBox.clientHeight;
-    if (iconBoxHeight > tallestHeight) {
-        tallestHeight = iconBoxHeight;
-    }
-});
+  // Set the minimum height of all icon-box elements to match the tallest height
+  iconBoxes.forEach(iconBox => {
+      iconBox.style.minHeight = tallestHeight + 'px';
+  });
+}
 
-// Set the minimum height of all icon-box elements to match the tallest height
-iconBoxes.forEach(iconBox => {
-    iconBox.style.minHeight = tallestHeight + 'px';
-});
+// Initial call to set the icon-box heights
+setIconBoxHeight();
+
+// Listen for window resize event to recalculate heights when needed
+window.addEventListener('resize', setIconBoxHeight);
+
 
 
 
