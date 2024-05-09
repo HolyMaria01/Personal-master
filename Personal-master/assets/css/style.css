@@ -870,7 +870,7 @@ section .container {
 }
 
 .resume .gallery {
-  border: none;
+  border: 2px solid transparent; /* Add transparent border by default */
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 16px;
   max-width: 600px; /* Set a maximum width */
@@ -913,7 +913,6 @@ section .container {
 }
 
 .resume .gallery img:hover {
-  opacity: 0.5;
   transform: scale(1.02);
 }
 
@@ -1023,7 +1022,7 @@ section .container {
 .services .gallery {
   position: relative;/* Position relative for absolute positioning of description */
   overflow: hidden;
-  border: none;
+  border: 2px solid transparent;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 16px;
   max-width: 600px; /* Set a maximum width */
@@ -1068,7 +1067,6 @@ section .container {
 }
 
 .services .gallery img:hover {
-  opacity: 0.5;
   transform: scale(1.02);
 }
 /*
@@ -1142,7 +1140,7 @@ section .container {
 
 .module .gallery {
   position: relative; /* Position relative for absolute positioning of description */
-  border: none;
+  border: 2px solid transparent; /* Add transparent border by default */
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 16px;
   max-width: 400px; /* Set a maximum width */
@@ -1150,6 +1148,7 @@ section .container {
   margin-top: 10px;
   margin-bottom: 20px; /* Add margin between gallery items */
   overflow: hidden; /* Prevent overflowing content */
+  white-space: normal; /* Allow words to break within the text */
 }
 
 .module .gallery:hover {
@@ -1179,10 +1178,16 @@ section .container {
   flex-direction: column;
   justify-content: center;
   align-items: left;
+  white-space: normal; /* Allow words to break within the text */
 }
 
+.module .desc i,
+.module .desc a {
+  display: inline-block;
+}
+
+
 .module .gallery img:hover {
-  opacity: 0.5;
   transform: scale(1.02);
 }
 
@@ -1195,12 +1200,6 @@ section .container {
 
 * {
   box-sizing: border-box;
-}
-
-.clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
 }
 
 @media only screen and (max-width: 900px) {
@@ -1248,6 +1247,12 @@ section .container {
   max-height: none; 
   display: block; /* Remove any default image spacing 
   margin: auto; /* Center the image within the content 
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 */
 /** 26.07.2023 lisa lõpp*/
