@@ -806,8 +806,8 @@ section .container {
 }
 
 .resume .resume-item h4 {
-  line-height: 18px;
-  font-size: 22px;
+  line-height: 28px;
+  font-size: 28px;
   font-weight: 600;
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
