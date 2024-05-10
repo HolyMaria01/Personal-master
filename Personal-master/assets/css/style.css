@@ -1348,7 +1348,7 @@ button.accordion:hover {
 
 /* Customize scrollbar track */
 ::-webkit-scrollbar-track {
-  background: transparent; /* Set background color of the scrollbar track */
+  background: #4bf0a5; /* Set background color of the scrollbar track */
 }
 
 /* Customize scrollbar thumb */
