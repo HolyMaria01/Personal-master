@@ -246,23 +246,30 @@ function setIconBoxHeight() {
 
   // Loop through each icon-box element to find the tallest height
   iconBoxes.forEach(iconBox => {
-      const iconBoxHeight = iconBox.clientHeight;
-      if (iconBoxHeight > tallestHeight) {
-          tallestHeight = iconBoxHeight;
-      }
+    const iconBoxHeight = iconBox.clientHeight;
+    if (iconBoxHeight > tallestHeight) {
+      tallestHeight = iconBoxHeight;
+    }
   });
 
   // Set the minimum height of all icon-box elements to match the tallest height
   iconBoxes.forEach(iconBox => {
-      iconBox.style.minHeight = tallestHeight + 'px';
+    iconBox.style.minHeight = tallestHeight + 'px';
   });
 }
 
-// Initial call to set the icon-box heights
-setIconBoxHeight();
+// Function to set icon-box heights after all content has loaded
+function setIconBoxHeightAfterLoad() {
+  // Call setIconBoxHeight after all content has loaded
+  window.addEventListener('load', setIconBoxHeight);
+}
+
+// Initial call to set the icon-box heights after all content has loaded
+setIconBoxHeightAfterLoad();
 
 // Listen for window resize event to recalculate heights when needed
 window.addEventListener('resize', setIconBoxHeight);
+
 
 
 
