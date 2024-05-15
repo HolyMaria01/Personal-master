@@ -44,7 +44,7 @@ button#read-more-button:hover {
 body {
   font-family: "Open Sans", sans-serif;
   background-color: #040404;
-  color: #fff;
+  color: #f5f0f0;
   position: relative;
   background: transparent;
 }
@@ -115,7 +115,7 @@ h6 {
 
 #header h1 a,
 #header h1 a:hover {
-  color: #fff;
+  color: #f5f0f0;
   line-height: 1;
   display: inline-block;
 }
@@ -127,7 +127,7 @@ h6 {
 }
 
 #header h2 span {
-  color: #fff;
+  color: #f5f0f0;
   border-bottom: 2px solid #18d26e;
   padding-bottom: 6px;
 }
@@ -148,7 +148,7 @@ h6 {
   justify-content: center;
   align-items: center;
   background: rgba(255, 255, 255, 0.1);
-  color: #fff;
+  color: #f5f0f0;
   line-height: 1;
   margin-right: 8px;
   border-radius: 50%;
@@ -292,14 +292,14 @@ h6 {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {
-  color: #fff;
+  color: #f5f0f0;
 }
 
 /**
 * Mobile Navigation 
 */
 .mobile-nav-toggle {
-  color: #fff;
+  color: #f5f0f0;
   font-size: 28px;
   cursor: pointer;
   display: none;
@@ -430,7 +430,7 @@ section .container {
   font-weight: 700;
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
-  color: #fff;
+  color: #f5f0f0;
 }
 
 /*--------------------------------------------------------------
@@ -553,7 +553,7 @@ section .container {
   font-size: 36px;
   display: block;
   font-weight: 600;
-  color: #fff;
+  color: #f5f0f0;
 }
 
 .counts .count-box p {
@@ -580,7 +580,7 @@ section .container {
   display: block;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
-  color: #fff;
+  color: #f5f0f0;
 }
 
 .skills .progress .skill .val {
@@ -622,7 +622,7 @@ section .container {
   padding: 0;
   line-height: 1;
   font-size: 18px;
-  color: #fff;
+  color: #f5f0f0;
 }
 
 .interests .icon-box:hover {
@@ -655,7 +655,7 @@ section .container {
   font-size: 18px;
   font-weight: bold;
   margin: 10px 0 5px 45px;
-  color: #fff;
+  color: #f5f0f0;
 }
 
 .testimonials .testimonial-item h4 {
@@ -748,7 +748,7 @@ section .container {
   font-size: 18px;
   font-weight: bold;
   margin: 10px 0 5px 45px;
-  color: #fff;
+  color: #f5f0f0;
 }
 
 .services .testimonial-item h4 {
@@ -793,7 +793,7 @@ section .container {
   font-weight: 700;
   margin-top: 20px;
   margin-bottom: 20px;
-  color: #fff;
+  color: #f5f0f0;
 }
 
 .resume .resume-item {
@@ -961,7 +961,7 @@ section .container {
 }
 
 .services .icon-box .icon span {
-  color: #fff;
+  color: #f5f0f0;
   font-size: 28px;
 }
 
@@ -985,14 +985,16 @@ section .container {
 }
 
 .services .icon-box h4 a {
-  color: #fff;
+  color: #f5f0f0;
 }
 
 .services .icon-box p {
   line-height: 24px;
-  font-size: 18px;
+  font-size: 16px;
   margin-bottom: 20px;
   text-align: left;
+  padding-left: 8px;
+  padding-right: 8px;
 }
 
 .services .icon-box:hover h4 a {
@@ -1066,7 +1068,7 @@ section .container {
 }
 
 .services .icon-box:hover .icon {
-  background: #fff;
+  background: #f5f0f0;
 }
 
 .services .icon-box:hover .icon i {
@@ -1383,7 +1385,7 @@ button.accordion:hover {
   font-weight: 600;
   line-height: 1;
   text-transform: uppercase;
-  color: #fff;
+  color: #f5f0f0;
   background: rgba(255, 255, 255, 0.1);
   margin: 0 3px 10px 3px;
   transition: all 0.3s ease-in-out;
@@ -1444,8 +1446,8 @@ button.accordion:hover {
   position: absolute;
   top: 35px;
   left: 35px;
-  border-top: 3px solid #fff;
-  border-left: 3px solid #fff;
+  border-top: 3px solid #f5f0f0;
+  border-left: 3px solid #f5f0f0;
   transition: all 0.5s ease 0s;
   z-index: 9994;
 }
@@ -1458,20 +1460,20 @@ button.accordion:hover {
   position: absolute;
   bottom: 35px;
   right: 35px;
-  border-bottom: 3px solid #fff;
-  border-right: 3px solid #fff;
+  border-bottom: 3px solid #f5f0f0;
+  border-right: 3px solid #f5f0f0;
   transition: all 0.5s ease 0s;
   z-index: 9994;
 }
 
 .portfolio .portfolio-wrap .portfolio-info h4 {
   font-size: 20px;
-  color: #fff;
+  color: #f5f0f0;
   font-weight: 600;
 }
 
 .portfolio .portfolio-wrap .portfolio-info p {
-  color: #ffffff;
+  color: #f5f0f0fff;
   font-size: 14px;
   text-transform: uppercase;
   padding: 0;
@@ -1484,7 +1486,7 @@ button.accordion:hover {
 }
 
 .portfolio .portfolio-wrap .portfolio-links a {
-  color: #fff;
+  color: #f5f0f0;
   margin: 0 2px;
   font-size: 28px;
   display: inline-block;
@@ -1601,7 +1603,7 @@ button.accordion:hover {
   padding: 15px;
   text-align: right;
   font-size: 13px;
-  color: #ffffff00;
+  color: #f5f0f0fff00;
   z-index: 999999;
 }
 
@@ -1619,5 +1621,5 @@ button.accordion:hover {
 }
 
 .credits a:hover {
-  color: #ffffff00;
+  color: #f5f0f0fff00;
 }
