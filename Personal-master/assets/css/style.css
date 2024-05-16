@@ -986,6 +986,8 @@ section .container {
 
 .services .icon-box h4 a {
   color: #f5f0f0;
+  border-radius: none;
+  padding: 6px 6px;
 }
 
 .services .icon-box p {
@@ -999,6 +1001,10 @@ section .container {
 
 .services .icon-box:hover h4 a {
   color: #35e888;
+  padding: 6px 6px;
+  background-color:#040404;
+  border-radius: 8px;
+  transition: all 0.5s ease-in-out;
 }
 
 .services .icon-box:hover p {
