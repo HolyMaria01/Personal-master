@@ -128,7 +128,7 @@ h6 {
 
 #header h2 span {
   color: #f5f0f0;
-  border-bottom: 2px solid #18d26e;
+  border-bottom: 4px solid #18d26e;
   padding-bottom: 6px;
 }
 
@@ -1013,6 +1013,8 @@ section .container {
 
 .services .icon-box:hover h4 a {
   color: #35e888;
+  text-decoration: none;
+  border-bottom: 4px solid #18d26e;
 }
 
 .services .icon-box:hover p {
@@ -1479,7 +1481,7 @@ button.accordion:hover {
 }
 
 .portfolio .portfolio-wrap .portfolio-info p {
-  color: #f5f0f0fff;
+  color: #f5f0f0;
   font-size: 14px;
   text-transform: uppercase;
   padding: 0;
@@ -1609,7 +1611,7 @@ button.accordion:hover {
   padding: 15px;
   text-align: right;
   font-size: 13px;
-  color: #f5f0f0fff00;
+  color: #f5f0f0;
   z-index: 999999;
 }
 
@@ -1627,5 +1629,5 @@ button.accordion:hover {
 }
 
 .credits a:hover {
-  color: #f5f0f0fff00;
+  color: #f5f0f0;
 }

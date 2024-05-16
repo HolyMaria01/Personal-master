@@ -235,7 +235,7 @@ swiperInstances.forEach(function(swiperInstance) {
 
 
 
-
+/**
 // Function to set the height of all icon-boxes to match the tallest one
 function setIconBoxHeight() {
   // Get all the icon-box elements
@@ -269,7 +269,7 @@ setIconBoxHeightAfterLoad();
 
 // Listen for window resize event to recalculate heights when needed
 window.addEventListener('resize', setIconBoxHeight);
-
+*/
 
 
 
