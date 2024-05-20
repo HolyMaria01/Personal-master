@@ -300,7 +300,7 @@ h6 {
 */
 .mobile-nav-toggle {
   color: #f5f0f0;
-  font-size: 28px;
+  font-size: 12px;
   cursor: pointer;
   display: none;
   line-height: 0;
@@ -308,6 +308,7 @@ h6 {
   position: fixed;
   right: 15px;
   top: 15px;
+  padding: 8px;
 }
 
 @media (max-width: 991px) {
