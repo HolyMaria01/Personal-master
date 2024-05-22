@@ -37,8 +37,11 @@ button#read-more-button {
 /* Style the button on hover */
 button#read-more-button:hover {
   background-color: #4bf0a5;
+  text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.5), 0 0 0.45em #97fdc6;
+  box-shadow: inset 0 0 0.5em 0 #18d26e, 0 0 0 0.45em 0 #75fdbf;
   opacity: 1.5;
 }
+
 /** 03.10.2023 lisa lõpp*/
 
 body {
@@ -73,8 +76,10 @@ a {
 }
 
 a:hover {
-  color: #35e888;
   text-decoration: none;
+  color: #6af7ab;
+  text-shadow: 0 0 0.100em hsl(0 0% 100% / 0.2), 0 0 0.2em #35e888;
+  transition: all 0.6s ease-in-out;
 }
 
 h1,
@@ -147,7 +152,7 @@ h6 {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: rgba(255, 255, 255, 0.1);
+  background: #18d26e;
   color: #f5f0f0;
   line-height: 1;
   margin-right: 8px;
@@ -156,8 +161,11 @@ h6 {
   height: 48px;
 }
 
-#header .social-links a:hover {
-  background: #18d26e;
+#header .social-links a:hover,
+#header .social-links a:focus{
+  background: #35e888;
+  box-shadow: 0 0 0.5em 0 #18d26e, 0 0 0 0.45em 0 #4bf0a5;
+  text-shadow: 0 0 0.100em hsl(0 0% 100% / 0.2), 0 0 0.2em #35e888;
 }
 
 @media (max-width: 992px) {
@@ -298,9 +306,10 @@ h6 {
 /**
 * Mobile Navigation 
 */
+
 .mobile-nav-toggle {
   color: #f5f0f0;
-  font-size: 12px;
+  font-size: 28px;
   cursor: pointer;
   display: none;
   line-height: 0;
@@ -309,6 +318,14 @@ h6 {
   right: 15px;
   top: 15px;
   padding: 8px;
+  margin: 12px;
+  text-shadow: none;
+  box-shadow: 0 0 0.5em 0 #18d26e, 0 0 0 0.5em 0 #18d26e;
+}
+
+.mobile-nav-toggle:hover {
+  color: #6af7ab;
+  text-shadow: 0 0 0.100em hsl(0 0% 100% / 0.2), 0 0 0.2em #35e888;
 }
 
 @media (max-width: 991px) {
@@ -332,12 +349,14 @@ h6 {
   transition: 0.3s;
   z-index: 999;
   margin-top: 0;
+  margin: 12px;
 }
 
 .navbar-mobile .mobile-nav-toggle {
   position: absolute;
   top: 15px;
   right: 15px;
+  margin: 12px;
 }
 
 .navbar-mobile ul {
@@ -355,6 +374,7 @@ h6 {
 
 .navbar-mobile li {
   padding: 12px 20px;
+  font-size: 24px;
 }
 
 .navbar-mobile li+li {
@@ -363,7 +383,7 @@ h6 {
 
 .navbar-mobile a,
 .navbar-mobile a:focus {
-  font-size: 16px;
+  font-size: 24px;
   position: relative;
 }
 
@@ -691,7 +711,6 @@ section .container {
   background: rgba(255, 255, 255, 0.1);
   position: relative;
   border-radius: 6px;
-  position: relative;
   z-index: 1;
 }
 
@@ -711,7 +730,10 @@ section .container {
   background-color: #18d26e;
 }
 
-
+.testimonials .swiper-pagination .swiper-pagination-bullet-active:hover {
+  background-color: #35e888;
+  box-shadow: 0 0 0.5em 0 #4bf0a5, 0 0 0 0.45em 0 #4bf0a5;
+}
 
 
 
@@ -879,10 +901,12 @@ section .container {
   margin-bottom: 20px; /* Add margin between gallery items */
   overflow: hidden; /* Prevent overflowing content */
   position: relative; /* Position relative for absolute positioning of description */
+  transition: ease-in-out 0.4s;
 }
 
 .resume .gallery:hover {
   border: 2px solid #4bf0a5;
+  box-shadow: 0 0 0.100em #6af7ab, 0 0 0.2em #35e888;
 }
 
 .resume .gallery img {
@@ -893,7 +917,7 @@ section .container {
   object-fit: cover; /* Maintain aspect ratio while filling the container */
   cursor: pointer;
   height: auto;
-  transition: transform 0.5s ease-in-out;
+  transition: transform 0.6s ease-in-out;
 }
 
 .resume .desc {
@@ -987,7 +1011,6 @@ section .container {
 
 .services .icon-box h4 a {
   color: #f5f0f0;
-  border-radius: none;
   padding: 6px 6px;
 }
 
@@ -1000,22 +1023,15 @@ section .container {
   padding-right: 8px;
 }
 
-.services .icon-box:hover h4 a {
-  color: #35e888;
-  padding: 6px 6px;
-  background-color:#040404;
-  border-radius: 8px;
-  transition: all 0.5s ease-in-out;
-}
-
 .services .icon-box:hover p {
   color: #f5f0f0;
 }
 
 .services .icon-box:hover h4 a {
-  color: #35e888;
-  text-decoration: none;
-  border-bottom: 4px solid #18d26e;
+  text-decoration: underline;
+  color: #6af7ab;
+  text-shadow: 0 0 0.100em hsl(0 0% 100% / 0.2), 0 0 0.2em #35e888;
+  transition: all 0.6s ease-in-out;
 }
 
 .services .icon-box:hover p {
@@ -1039,6 +1055,7 @@ section .container {
   margin: 0 auto;
   position: relative;
   max-height: 400px;
+  transition: ease-in-out 0.4s;
 }
 
 .services .gallery img {
@@ -1050,6 +1067,7 @@ section .container {
   opacity: 0.8;
   object-fit: cover; /* Maintain aspect ratio while filling the container */
   cursor: pointer;
+  transition: transform 0.6s ease-in-out;
 }
 
 .services .gallery .desc {
@@ -1065,6 +1083,7 @@ section .container {
 
 .services .gallery:hover {
   border: 2px solid #4bf0a5;
+  box-shadow: 0 0 0.100em #6af7ab, 0 0 0.2em #35e888;
 }
 
 .services .gallery img:hover {
@@ -1150,10 +1169,12 @@ section .container {
   margin-bottom: 20px; /* Add margin between gallery items */
   overflow: hidden; /* Prevent overflowing content */
   white-space: normal; /* Allow words to break within the text */
+  transition: ease-in-out 0.4s;
 }
 
 .module .gallery:hover {
   border: 2px solid #4bf0a5;
+  box-shadow: 0 0 0.100em #6af7ab, 0 0 0.2em #35e888;
 }
 
 .module .gallery img {
@@ -1163,7 +1184,7 @@ section .container {
   height: 200px;
   object-fit: cover; /* Maintain aspect ratio while filling the container */
   cursor: pointer;
-  transition: transform 0.5s ease-in-out;
+  transition: transform 0.6s ease-in-out;
 }
 
 .module .desc {
@@ -1313,7 +1334,6 @@ button.accordion:hover {
   grid-template-columns: repeat(3, 1fr); /* Three equal-width columns */
   gap: 10px;
   width: 90%; /* Adjust this width as needed */
-  margin: 0 auto; /* Center the table of contents within the container */
 }
 
 /* Media query for smaller screens */
@@ -1338,10 +1358,13 @@ button.accordion:hover {
   border-radius: 5px;
   font-weight: bold;
   transition: background-color 0.3s ease;
+  transition: box-shadow 0.3s ease;
 }
 
 .table-of-contents li a:hover {
   background-color: #4bf0a5;
+  text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.5), 0 0 0.45em #97fdc6;
+  box-shadow: inset 0 0 0.5em 0 #18d26e, 0 0 0 0.45em 0 #75fdbf;
   opacity: 1.5;
 }
 /** 06.08.2023 lisa l천pp*/
